@@ -103,290 +103,253 @@
         This guide covers essential terms, SwiftUI modifiers, layout concepts, and acronyms you'll encounter as you develop iOS apps.</p>
     </div>
 
-    <h2 style="text-align: center; color: #0071e3; margin-top: 30px;">Index of Terms</h2>
+        <h2 style="text-align: center; color: #0071e3; margin-top: 30px;">Index of Terms</h2>
     <p style="text-align: center; color: #666; font-style: italic; margin-bottom: 30px;">Click a Term to See Explanation</p>
     
     <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 40px;">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
             
-            <!-- General Xcode & Swift Terms -->
             <div>
                 <h3 style="color: #0071e3; border-bottom: 2px solid #0071e3; padding-bottom: 8px; margin-bottom: 15px;">🔧 General Xcode & Swift Terms</h3>
                 <ul style="list-style: none; padding-left: 0; line-height: 1.8; column-count: 2; column-gap: 20px;">
-                    <li><a href="#var" style="color: #0071e3; text-decoration: none;">var</a></li>
-                    <li><a href="#let" style="color: #0071e3; text-decoration: none;">let</a></li>
-                    <li><a href="#func" style="color: #0071e3; text-decoration: none;">func</a></li>
-                    <li><a href="#struct" style="color: #0071e3; text-decoration: none;">struct</a></li>
-                    <li><a href="#class" style="color: #0071e3; text-decoration: none;">class</a></li>
-                    <li><a href="#state" style="color: #0071e3; text-decoration: none;">@State</a></li>
-                    <li><a href="#binding" style="color: #0071e3; text-decoration: none;">@Binding</a></li>
-                    <li><a href="#stateobject" style="color: #0071e3; text-decoration: none;">@StateObject</a></li>
-                    <li><a href="#observedobject" style="color: #0071e3; text-decoration: none;">@ObservedObject</a></li>
-                    <li><a href="#published" style="color: #0071e3; text-decoration: none;">@Published</a></li>
-                    <li><a href="#environment" style="color: #0071e3; text-decoration: none;">@Environment</a></li>
-                    <li><a href="#environmentobject" style="color: #0071e3; text-decoration: none;">@EnvironmentObject</a></li>
-                    <li><a href="#optional" style="color: #0071e3; text-decoration: none;">Optional</a></li>
-                    <li><a href="#guard" style="color: #0071e3; text-decoration: none;">Guard</a></li>
-                    <li><a href="#iflet" style="color: #0071e3; text-decoration: none;">If Let</a></li>
-                    <li><a href="#extension" style="color: #0071e3; text-decoration: none;">Extension</a></li>
-                    <li><a href="#protocol" style="color: #0071e3; text-decoration: none;">Protocol</a></li>
-                    <li><a href="#enum" style="color: #0071e3; text-decoration: none;">Enum</a></li>
-                    <li><a href="#closure" style="color: #0071e3; text-decoration: none;">Closure</a></li>
+
                     <li><a href="#array" style="color: #0071e3; text-decoration: none;">Array</a></li>
-                    <li><a href="#dictionary" style="color: #0071e3; text-decoration: none;">Dictionary</a></li>
-                    <li><a href="#tuple" style="color: #0071e3; text-decoration: none;">Tuple</a></li>
-                    <li><a href="#typeinference" style="color: #0071e3; text-decoration: none;">Type Inference</a></li>
-                    <li><a href="#initializer" style="color: #0071e3; text-decoration: none;">Initializer (init)</a></li>
+
+                    <li><a href="#binding" style="color: #0071e3; text-decoration: none;">@Binding</a></li>
+
+                    <li><a href="#class" style="color: #0071e3; text-decoration: none;">class</a></li>
+
+                    <li><a href="#closure" style="color: #0071e3; text-decoration: none;">Closure</a></li>
+
                     <li><a href="#computedproperty" style="color: #0071e3; text-decoration: none;">Computed Property</a></li>
-                    <li><a href="#selfself" style="color: #0071e3; text-decoration: none;">Self vs self</a></li>
+
+                    <li><a href="#dictionary" style="color: #0071e3; text-decoration: none;">Dictionary</a></li>
+
+                    <li><a href="#enum" style="color: #0071e3; text-decoration: none;">Enum</a></li>
+
+                    <li><a href="#environment" style="color: #0071e3; text-decoration: none;">@Environment</a></li>
+
+                    <li><a href="#environmentobject" style="color: #0071e3; text-decoration: none;">@EnvironmentObject</a></li>
+
+                    <li><a href="#extension" style="color: #0071e3; text-decoration: none;">Extension</a></li>
+
+                    <li><a href="#func" style="color: #0071e3; text-decoration: none;">func</a></li>
+
+                    <li><a href="#guard" style="color: #0071e3; text-decoration: none;">Guard</a></li>
+
+                    <li><a href="#iflet" style="color: #0071e3; text-decoration: none;">If Let</a></li>
+
                     <li><a href="#import" style="color: #0071e3; text-decoration: none;">Import</a></li>
+
+                    <li><a href="#initializer" style="color: #0071e3; text-decoration: none;">Initializer (init)</a></li>
+
+                    <li><a href="#let" style="color: #0071e3; text-decoration: none;">let</a></li>
+
+                    <li><a href="#observedobject" style="color: #0071e3; text-decoration: none;">@ObservedObject</a></li>
+
+                    <li><a href="#optional" style="color: #0071e3; text-decoration: none;">Optional</a></li>
+
+                    <li><a href="#protocol" style="color: #0071e3; text-decoration: none;">Protocol</a></li>
+
+                    <li><a href="#published" style="color: #0071e3; text-decoration: none;">@Published</a></li>
+
+                    <li><a href="#selfself" style="color: #0071e3; text-decoration: none;">Self vs self</a></li>
+
+                    <li><a href="#state" style="color: #0071e3; text-decoration: none;">@State</a></li>
+
+                    <li><a href="#stateobject" style="color: #0071e3; text-decoration: none;">@StateObject</a></li>
+
+                    <li><a href="#struct" style="color: #0071e3; text-decoration: none;">struct</a></li>
+
+                    <li><a href="#tuple" style="color: #0071e3; text-decoration: none;">Tuple</a></li>
+
+                    <li><a href="#typeinference" style="color: #0071e3; text-decoration: none;">Type Inference</a></li>
+
+                    <li><a href="#var" style="color: #0071e3; text-decoration: none;">var</a></li>
+
                 </ul>
             </div>
 
-            <!-- SwiftUI Modifiers -->
             <div>
                 <h3 style="color: #0071e3; border-bottom: 2px solid #0071e3; padding-bottom: 8px; margin-bottom: 15px;">🎨 SwiftUI Modifiers</h3>
                 <ul style="list-style: none; padding-left: 0; line-height: 1.8; column-count: 2; column-gap: 20px;">
-                    <li><a href="#padding" style="color: #0071e3; text-decoration: none;">.padding()</a></li>
-                    <li><a href="#foregroundcolor" style="color: #0071e3; text-decoration: none;">.foregroundColor()</a></li>
-                    <li><a href="#foregroundstyle" style="color: #0071e3; text-decoration: none;">.foregroundStyle()</a></li>
-                    <li><a href="#background" style="color: #0071e3; text-decoration: none;">.background()</a></li>
-                    <li><a href="#frame" style="color: #0071e3; text-decoration: none;">.frame()</a></li>
-                    <li><a href="#font" style="color: #0071e3; text-decoration: none;">.font()</a></li>
-                    <li><a href="#bold" style="color: #0071e3; text-decoration: none;">.bold()</a></li>
-                    <li><a href="#italic" style="color: #0071e3; text-decoration: none;">.italic()</a></li>
-                    <li><a href="#cornerradius" style="color: #0071e3; text-decoration: none;">.cornerRadius()</a></li>
-                    <li><a href="#clipshape" style="color: #0071e3; text-decoration: none;">.clipShape()</a></li>
-                    <li><a href="#shadow" style="color: #0071e3; text-decoration: none;">.shadow()</a></li>
-                    <li><a href="#opacity" style="color: #0071e3; text-decoration: none;">.opacity()</a></li>
-                    <li><a href="#overlay" style="color: #0071e3; text-decoration: none;">.overlay()</a></li>
-                    <li><a href="#offset" style="color: #0071e3; text-decoration: none;">.offset()</a></li>
-                    <li><a href="#rotationeffect" style="color: #0071e3; text-decoration: none;">.rotationEffect()</a></li>
-                    <li><a href="#scaleeffect" style="color: #0071e3; text-decoration: none;">.scaleEffect()</a></li>
-                    <li><a href="#animation" style="color: #0071e3; text-decoration: none;">.animation()</a></li>
-                    <li><a href="#transition" style="color: #0071e3; text-decoration: none;">.transition()</a></li>
-                    <li><a href="#onappear" style="color: #0071e3; text-decoration: none;">.onAppear()</a></li>
-                    <li><a href="#ondisappear" style="color: #0071e3; text-decoration: none;">.onDisappear()</a></li>
-                    <li><a href="#disabled" style="color: #0071e3; text-decoration: none;">.disabled()</a></li>
-                    <li><a href="#alert" style="color: #0071e3; text-decoration: none;">.alert()</a></li>
-                    <li><a href="#sheet" style="color: #0071e3; text-decoration: none;">.sheet()</a></li>
-                    <li><a href="#navigationtitle" style="color: #0071e3; text-decoration: none;">.navigationTitle()</a></li>
-                    <li><a href="#navigationbartitledisplaymode" style="color: #0071e3; text-decoration: none;">.navigationBarTitleDisplayMode()</a></li>
-                    <li><a href="#toolbar" style="color: #0071e3; text-decoration: none;">.toolbar()</a></li>
-                    <li><a href="#liststyle" style="color: #0071e3; text-decoration: none;">.listStyle()</a></li>
-                    <li><a href="#tabitem" style="color: #0071e3; text-decoration: none;">.tabItem()</a></li>
+
                     <li><a href="#accentcolor" style="color: #0071e3; text-decoration: none;">.accentColor()</a></li>
+
+                    <li><a href="#alert" style="color: #0071e3; text-decoration: none;">.alert()</a></li>
+
+                    <li><a href="#animation" style="color: #0071e3; text-decoration: none;">.animation()</a></li>
+
+                    <li><a href="#background" style="color: #0071e3; text-decoration: none;">.background()</a></li>
+
+                    <li><a href="#bold" style="color: #0071e3; text-decoration: none;">.bold()</a></li>
+
+                    <li><a href="#clipshape" style="color: #0071e3; text-decoration: none;">.clipShape()</a></li>
+
+                    <li><a href="#cornerradius" style="color: #0071e3; text-decoration: none;">.cornerRadius()</a></li>
+
+                    <li><a href="#disabled" style="color: #0071e3; text-decoration: none;">.disabled()</a></li>
+
+                    <li><a href="#font" style="color: #0071e3; text-decoration: none;">.font()</a></li>
+
+                    <li><a href="#foregroundcolor" style="color: #0071e3; text-decoration: none;">.foregroundColor()</a></li>
+
+                    <li><a href="#foregroundstyle" style="color: #0071e3; text-decoration: none;">.foregroundStyle()</a></li>
+
+                    <li><a href="#frame" style="color: #0071e3; text-decoration: none;">.frame()</a></li>
+
+                    <li><a href="#italic" style="color: #0071e3; text-decoration: none;">.italic()</a></li>
+
+                    <li><a href="#liststyle" style="color: #0071e3; text-decoration: none;">.listStyle()</a></li>
+
+                    <li><a href="#navigationbartitledisplaymode" style="color: #0071e3; text-decoration: none;">.navigationBarTitleDisplayMode()</a></li>
+
+                    <li><a href="#navigationtitle" style="color: #0071e3; text-decoration: none;">.navigationTitle()</a></li>
+
+                    <li><a href="#offset" style="color: #0071e3; text-decoration: none;">.offset()</a></li>
+
+                    <li><a href="#onappear" style="color: #0071e3; text-decoration: none;">.onAppear()</a></li>
+
+                    <li><a href="#ondisappear" style="color: #0071e3; text-decoration: none;">.onDisappear()</a></li>
+
+                    <li><a href="#opacity" style="color: #0071e3; text-decoration: none;">.opacity()</a></li>
+
+                    <li><a href="#overlay" style="color: #0071e3; text-decoration: none;">.overlay()</a></li>
+
+                    <li><a href="#padding" style="color: #0071e3; text-decoration: none;">.padding()</a></li>
+
+                    <li><a href="#rotationeffect" style="color: #0071e3; text-decoration: none;">.rotationEffect()</a></li>
+
+                    <li><a href="#scaleeffect" style="color: #0071e3; text-decoration: none;">.scaleEffect()</a></li>
+
+                    <li><a href="#shadow" style="color: #0071e3; text-decoration: none;">.shadow()</a></li>
+
+                    <li><a href="#sheet" style="color: #0071e3; text-decoration: none;">.sheet()</a></li>
+
+                    <li><a href="#tabitem" style="color: #0071e3; text-decoration: none;">.tabItem()</a></li>
+
                     <li><a href="#tint" style="color: #0071e3; text-decoration: none;">.tint()</a></li>
+
+                    <li><a href="#toolbar" style="color: #0071e3; text-decoration: none;">.toolbar()</a></li>
+
+                    <li><a href="#transition" style="color: #0071e3; text-decoration: none;">.transition()</a></li>
+
                 </ul>
             </div>
 
-            <!-- SwiftUI Layout Terms -->
             <div>
                 <h3 style="color: #0071e3; border-bottom: 2px solid #0071e3; padding-bottom: 8px; margin-bottom: 15px;">📐 SwiftUI Layout Terms</h3>
                 <ul style="list-style: none; padding-left: 0; line-height: 1.8; column-count: 2; column-gap: 20px;">
-                    <li><a href="#vstack" style="color: #0071e3; text-decoration: none;">VStack</a></li>
-                    <li><a href="#hstack" style="color: #0071e3; text-decoration: none;">HStack</a></li>
-                    <li><a href="#zstack" style="color: #0071e3; text-decoration: none;">ZStack</a></li>
-                    <li><a href="#spacer" style="color: #0071e3; text-decoration: none;">Spacer</a></li>
-                    <li><a href="#divider" style="color: #0071e3; text-decoration: none;">Divider</a></li>
-                    <li><a href="#scrollview" style="color: #0071e3; text-decoration: none;">ScrollView</a></li>
-                    <li><a href="#list" style="color: #0071e3; text-decoration: none;">List</a></li>
-                    <li><a href="#foreach" style="color: #0071e3; text-decoration: none;">ForEach</a></li>
-                    <li><a href="#lazyvstack" style="color: #0071e3; text-decoration: none;">LazyVStack</a></li>
-                    <li><a href="#lazyhstack" style="color: #0071e3; text-decoration: none;">LazyHStack</a></li>
-                    <li><a href="#grid" style="color: #0071e3; text-decoration: none;">Grid</a></li>
-                    <li><a href="#lazyvgrid" style="color: #0071e3; text-decoration: none;">LazyVGrid</a></li>
-                    <li><a href="#lazyhgrid" style="color: #0071e3; text-decoration: none;">LazyHGrid</a></li>
-                    <li><a href="#geometryreader" style="color: #0071e3; text-decoration: none;">GeometryReader</a></li>
-                    <li><a href="#navigationview" style="color: #0071e3; text-decoration: none;">NavigationView</a></li>
-                    <li><a href="#navigationstack" style="color: #0071e3; text-decoration: none;">NavigationStack</a></li>
-                    <li><a href="#navigationlink" style="color: #0071e3; text-decoration: none;">NavigationLink</a></li>
-                    <li><a href="#tabview" style="color: #0071e3; text-decoration: none;">TabView</a></li>
-                    <li><a href="#group" style="color: #0071e3; text-decoration: none;">Group</a></li>
+
                     <li><a href="#alignment" style="color: #0071e3; text-decoration: none;">alignment</a></li>
-                    <li><a href="#spacing" style="color: #0071e3; text-decoration: none;">spacing</a></li>
-                    <li><a href="#safearea" style="color: #0071e3; text-decoration: none;">SafeArea</a></li>
+
                     <li><a href="#aspectratio" style="color: #0071e3; text-decoration: none;">.aspectRatio()</a></li>
+
+                    <li><a href="#divider" style="color: #0071e3; text-decoration: none;">Divider</a></li>
+
+                    <li><a href="#foreach" style="color: #0071e3; text-decoration: none;">ForEach</a></li>
+
+                    <li><a href="#geometryreader" style="color: #0071e3; text-decoration: none;">GeometryReader</a></li>
+
+                    <li><a href="#grid" style="color: #0071e3; text-decoration: none;">Grid</a></li>
+
+                    <li><a href="#group" style="color: #0071e3; text-decoration: none;">Group</a></li>
+
+                    <li><a href="#hstack" style="color: #0071e3; text-decoration: none;">HStack</a></li>
+
+                    <li><a href="#lazyhgrid" style="color: #0071e3; text-decoration: none;">LazyHGrid</a></li>
+
+                    <li><a href="#lazyhstack" style="color: #0071e3; text-decoration: none;">LazyHStack</a></li>
+
+                    <li><a href="#lazyvgrid" style="color: #0071e3; text-decoration: none;">LazyVGrid</a></li>
+
+                    <li><a href="#lazyvstack" style="color: #0071e3; text-decoration: none;">LazyVStack</a></li>
+
+                    <li><a href="#list" style="color: #0071e3; text-decoration: none;">List</a></li>
+
+                    <li><a href="#navigationlink" style="color: #0071e3; text-decoration: none;">NavigationLink</a></li>
+
+                    <li><a href="#navigationstack" style="color: #0071e3; text-decoration: none;">NavigationStack</a></li>
+
+                    <li><a href="#navigationview" style="color: #0071e3; text-decoration: none;">NavigationView</a></li>
+
                     <li><a href="#resizable" style="color: #0071e3; text-decoration: none;">.resizable()</a></li>
+
+                    <li><a href="#safearea" style="color: #0071e3; text-decoration: none;">SafeArea</a></li>
+
+                    <li><a href="#scrollview" style="color: #0071e3; text-decoration: none;">ScrollView</a></li>
+
+                    <li><a href="#spacer" style="color: #0071e3; text-decoration: none;">Spacer</a></li>
+
+                    <li><a href="#spacing" style="color: #0071e3; text-decoration: none;">spacing</a></li>
+
+                    <li><a href="#tabview" style="color: #0071e3; text-decoration: none;">TabView</a></li>
+
+                    <li><a href="#vstack" style="color: #0071e3; text-decoration: none;">VStack</a></li>
+
+                    <li><a href="#zstack" style="color: #0071e3; text-decoration: none;">ZStack</a></li>
+
                 </ul>
             </div>
 
-            <!-- Acronyms -->
             <div>
                 <h3 style="color: #0071e3; border-bottom: 2px solid #0071e3; padding-bottom: 8px; margin-bottom: 15px;">🔤 Acronyms</h3>
                 <ul style="list-style: none; padding-left: 0; line-height: 1.8; column-count: 2; column-gap: 20px;">
-                    <li><a href="#ui" style="color: #0071e3; text-decoration: none;">UI</a></li>
-                    <li><a href="#ux" style="color: #0071e3; text-decoration: none;">UX</a></li>
+
                     <li><a href="#api" style="color: #0071e3; text-decoration: none;">API</a></li>
-                    <li><a href="#sdk" style="color: #0071e3; text-decoration: none;">SDK</a></li>
-                    <li><a href="#ide" style="color: #0071e3; text-decoration: none;">IDE</a></li>
-                    <li><a href="#json" style="color: #0071e3; text-decoration: none;">JSON</a></li>
-                    <li><a href="#url" style="color: #0071e3; text-decoration: none;">URL</a></li>
-                    <li><a href="#http" style="color: #0071e3; text-decoration: none;">HTTP</a></li>
-                    <li><a href="#rest" style="color: #0071e3; text-decoration: none;">REST</a></li>
-                    <li><a href="#mvvm" style="color: #0071e3; text-decoration: none;">MVVM</a></li>
-                    <li><a href="#mvc" style="color: #0071e3; text-decoration: none;">MVC</a></li>
-                    <li><a href="#sf" style="color: #0071e3; text-decoration: none;">SF</a></li>
-                    <li><a href="#wwdc" style="color: #0071e3; text-decoration: none;">WWDC</a></li>
-                    <li><a href="#ios" style="color: #0071e3; text-decoration: none;">iOS</a></li>
-                    <li><a href="#macos" style="color: #0071e3; text-decoration: none;">macOS</a></li>
+
                     <li><a href="#cpu" style="color: #0071e3; text-decoration: none;">CPU</a></li>
-                    <li><a href="#gpu" style="color: #0071e3; text-decoration: none;">GPU</a></li>
-                    <li><a href="#ram" style="color: #0071e3; text-decoration: none;">RAM</a></li>
+
                     <li><a href="#crud" style="color: #0071e3; text-decoration: none;">CRUD</a></li>
+
                     <li><a href="#csv" style="color: #0071e3; text-decoration: none;">CSV</a></li>
-                    <li><a href="#xml" style="color: #0071e3; text-decoration: none;">XML</a></li>
-                    <li><a href="#os" style="color: #0071e3; text-decoration: none;">OS</a></li>
+
                     <li><a href="#dry" style="color: #0071e3; text-decoration: none;">DRY</a></li>
+
                     <li><a href="#git" style="color: #0071e3; text-decoration: none;">GIT</a></li>
+
+                    <li><a href="#gpu" style="color: #0071e3; text-decoration: none;">GPU</a></li>
+
+                    <li><a href="#http" style="color: #0071e3; text-decoration: none;">HTTP</a></li>
+
+                    <li><a href="#ide" style="color: #0071e3; text-decoration: none;">IDE</a></li>
+
+                    <li><a href="#ios" style="color: #0071e3; text-decoration: none;">iOS</a></li>
+
+                    <li><a href="#json" style="color: #0071e3; text-decoration: none;">JSON</a></li>
+
+                    <li><a href="#macos" style="color: #0071e3; text-decoration: none;">macOS</a></li>
+
+                    <li><a href="#mvc" style="color: #0071e3; text-decoration: none;">MVC</a></li>
+
+                    <li><a href="#mvvm" style="color: #0071e3; text-decoration: none;">MVVM</a></li>
+
+                    <li><a href="#os" style="color: #0071e3; text-decoration: none;">OS</a></li>
+
+                    <li><a href="#ram" style="color: #0071e3; text-decoration: none;">RAM</a></li>
+
+                    <li><a href="#rest" style="color: #0071e3; text-decoration: none;">REST</a></li>
+
+                    <li><a href="#sdk" style="color: #0071e3; text-decoration: none;">SDK</a></li>
+
+                    <li><a href="#sf" style="color: #0071e3; text-decoration: none;">SF</a></li>
+
+                    <li><a href="#ui" style="color: #0071e3; text-decoration: none;">UI</a></li>
+
+                    <li><a href="#url" style="color: #0071e3; text-decoration: none;">URL</a></li>
+
+                    <li><a href="#ux" style="color: #0071e3; text-decoration: none;">UX</a></li>
+
+                    <li><a href="#wwdc" style="color: #0071e3; text-decoration: none;">WWDC</a></li>
+
+                    <li><a href="#xml" style="color: #0071e3; text-decoration: none;">XML</a></li>
+
                 </ul>
             </div>
         </div>
     </div>
 
-    <h2 style="text-align: center; color: #0071e3; margin-top: 30px;">Index of Terms</h2>
-    <p style="text-align: center; color: #666; font-style: italic; margin-bottom: 30px;">Click a Term to See Explanation</p>
-    
-    <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 40px;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-            
-            <!-- General Xcode & Swift Terms -->
-            <div>
-                <h3 style="color: #0071e3; border-bottom: 2px solid #0071e3; padding-bottom: 8px; margin-bottom: 15px;">🔧 General Xcode & Swift Terms</h3>
-                <ul style="list-style: none; padding-left: 0; line-height: 1.8; column-count: 2; column-gap: 20px;">
-                    <li><a href="#var" style="color: #0071e3; text-decoration: none;">var</a></li>
-                    <li><a href="#let" style="color: #0071e3; text-decoration: none;">let</a></li>
-                    <li><a href="#func" style="color: #0071e3; text-decoration: none;">func</a></li>
-                    <li><a href="#struct" style="color: #0071e3; text-decoration: none;">struct</a></li>
-                    <li><a href="#class" style="color: #0071e3; text-decoration: none;">class</a></li>
-                    <li><a href="#state" style="color: #0071e3; text-decoration: none;">@State</a></li>
-                    <li><a href="#binding" style="color: #0071e3; text-decoration: none;">@Binding</a></li>
-                    <li><a href="#stateobject" style="color: #0071e3; text-decoration: none;">@StateObject</a></li>
-                    <li><a href="#observedobject" style="color: #0071e3; text-decoration: none;">@ObservedObject</a></li>
-                    <li><a href="#published" style="color: #0071e3; text-decoration: none;">@Published</a></li>
-                    <li><a href="#environment" style="color: #0071e3; text-decoration: none;">@Environment</a></li>
-                    <li><a href="#environmentobject" style="color: #0071e3; text-decoration: none;">@EnvironmentObject</a></li>
-                    <li><a href="#optional" style="color: #0071e3; text-decoration: none;">Optional</a></li>
-                    <li><a href="#guard" style="color: #0071e3; text-decoration: none;">Guard</a></li>
-                    <li><a href="#iflet" style="color: #0071e3; text-decoration: none;">If Let</a></li>
-                    <li><a href="#extension" style="color: #0071e3; text-decoration: none;">Extension</a></li>
-                    <li><a href="#protocol" style="color: #0071e3; text-decoration: none;">Protocol</a></li>
-                    <li><a href="#enum" style="color: #0071e3; text-decoration: none;">Enum</a></li>
-                    <li><a href="#closure" style="color: #0071e3; text-decoration: none;">Closure</a></li>
-                    <li><a href="#array" style="color: #0071e3; text-decoration: none;">Array</a></li>
-                    <li><a href="#dictionary" style="color: #0071e3; text-decoration: none;">Dictionary</a></li>
-                    <li><a href="#tuple" style="color: #0071e3; text-decoration: none;">Tuple</a></li>
-                    <li><a href="#typeinference" style="color: #0071e3; text-decoration: none;">Type Inference</a></li>
-                    <li><a href="#initializer" style="color: #0071e3; text-decoration: none;">Initializer (init)</a></li>
-                    <li><a href="#computedproperty" style="color: #0071e3; text-decoration: none;">Computed Property</a></li>
-                    <li><a href="#selfself" style="color: #0071e3; text-decoration: none;">Self vs self</a></li>
-                    <li><a href="#import" style="color: #0071e3; text-decoration: none;">Import</a></li>
-                </ul>
-            </div>
-
-            <!-- SwiftUI Modifiers -->
-            <div>
-                <h3 style="color: #0071e3; border-bottom: 2px solid #0071e3; padding-bottom: 8px; margin-bottom: 15px;">🎨 SwiftUI Modifiers</h3>
-                <ul style="list-style: none; padding-left: 0; line-height: 1.8; column-count: 2; column-gap: 20px;">
-                    <li><a href="#padding" style="color: #0071e3; text-decoration: none;">.padding()</a></li>
-                    <li><a href="#foregroundcolor" style="color: #0071e3; text-decoration: none;">.foregroundColor()</a></li>
-                    <li><a href="#foregroundstyle" style="color: #0071e3; text-decoration: none;">.foregroundStyle()</a></li>
-                    <li><a href="#background" style="color: #0071e3; text-decoration: none;">.background()</a></li>
-                    <li><a href="#frame" style="color: #0071e3; text-decoration: none;">.frame()</a></li>
-                    <li><a href="#font" style="color: #0071e3; text-decoration: none;">.font()</a></li>
-                    <li><a href="#bold" style="color: #0071e3; text-decoration: none;">.bold()</a></li>
-                    <li><a href="#italic" style="color: #0071e3; text-decoration: none;">.italic()</a></li>
-                    <li><a href="#cornerradius" style="color: #0071e3; text-decoration: none;">.cornerRadius()</a></li>
-                    <li><a href="#clipshape" style="color: #0071e3; text-decoration: none;">.clipShape()</a></li>
-                    <li><a href="#shadow" style="color: #0071e3; text-decoration: none;">.shadow()</a></li>
-                    <li><a href="#opacity" style="color: #0071e3; text-decoration: none;">.opacity()</a></li>
-                    <li><a href="#overlay" style="color: #0071e3; text-decoration: none;">.overlay()</a></li>
-                    <li><a href="#offset" style="color: #0071e3; text-decoration: none;">.offset()</a></li>
-                    <li><a href="#rotationeffect" style="color: #0071e3; text-decoration: none;">.rotationEffect()</a></li>
-                    <li><a href="#scaleeffect" style="color: #0071e3; text-decoration: none;">.scaleEffect()</a></li>
-                    <li><a href="#animation" style="color: #0071e3; text-decoration: none;">.animation()</a></li>
-                    <li><a href="#transition" style="color: #0071e3; text-decoration: none;">.transition()</a></li>
-                    <li><a href="#onappear" style="color: #0071e3; text-decoration: none;">.onAppear()</a></li>
-                    <li><a href="#ondisappear" style="color: #0071e3; text-decoration: none;">.onDisappear()</a></li>
-                    <li><a href="#disabled" style="color: #0071e3; text-decoration: none;">.disabled()</a></li>
-                    <li><a href="#alert" style="color: #0071e3; text-decoration: none;">.alert()</a></li>
-                    <li><a href="#sheet" style="color: #0071e3; text-decoration: none;">.sheet()</a></li>
-                    <li><a href="#navigationtitle" style="color: #0071e3; text-decoration: none;">.navigationTitle()</a></li>
-                    <li><a href="#navigationbartitledisplaymode" style="color: #0071e3; text-decoration: none;">.navigationBarTitleDisplayMode()</a></li>
-                    <li><a href="#toolbar" style="color: #0071e3; text-decoration: none;">.toolbar()</a></li>
-                    <li><a href="#liststyle" style="color: #0071e3; text-decoration: none;">.listStyle()</a></li>
-                    <li><a href="#tabitem" style="color: #0071e3; text-decoration: none;">.tabItem()</a></li>
-                    <li><a href="#accentcolor" style="color: #0071e3; text-decoration: none;">.accentColor()</a></li>
-                    <li><a href="#tint" style="color: #0071e3; text-decoration: none;">.tint()</a></li>
-                </ul>
-            </div>
-
-            <!-- SwiftUI Layout Terms -->
-            <div>
-                <h3 style="color: #0071e3; border-bottom: 2px solid #0071e3; padding-bottom: 8px; margin-bottom: 15px;">📐 SwiftUI Layout Terms</h3>
-                <ul style="list-style: none; padding-left: 0; line-height: 1.8; column-count: 2; column-gap: 20px;">
-                    <li><a href="#vstack" style="color: #0071e3; text-decoration: none;">VStack</a></li>
-                    <li><a href="#hstack" style="color: #0071e3; text-decoration: none;">HStack</a></li>
-                    <li><a href="#zstack" style="color: #0071e3; text-decoration: none;">ZStack</a></li>
-                    <li><a href="#spacer" style="color: #0071e3; text-decoration: none;">Spacer</a></li>
-                    <li><a href="#divider" style="color: #0071e3; text-decoration: none;">Divider</a></li>
-                    <li><a href="#scrollview" style="color: #0071e3; text-decoration: none;">ScrollView</a></li>
-                    <li><a href="#list" style="color: #0071e3; text-decoration: none;">List</a></li>
-                    <li><a href="#foreach" style="color: #0071e3; text-decoration: none;">ForEach</a></li>
-                    <li><a href="#lazyvstack" style="color: #0071e3; text-decoration: none;">LazyVStack</a></li>
-                    <li><a href="#lazyhstack" style="color: #0071e3; text-decoration: none;">LazyHStack</a></li>
-                    <li><a href="#grid" style="color: #0071e3; text-decoration: none;">Grid</a></li>
-                    <li><a href="#lazyvgrid" style="color: #0071e3; text-decoration: none;">LazyVGrid</a></li>
-                    <li><a href="#lazyhgrid" style="color: #0071e3; text-decoration: none;">LazyHGrid</a></li>
-                    <li><a href="#geometryreader" style="color: #0071e3; text-decoration: none;">GeometryReader</a></li>
-                    <li><a href="#navigationview" style="color: #0071e3; text-decoration: none;">NavigationView</a></li>
-                    <li><a href="#navigationstack" style="color: #0071e3; text-decoration: none;">NavigationStack</a></li>
-                    <li><a href="#navigationlink" style="color: #0071e3; text-decoration: none;">NavigationLink</a></li>
-                    <li><a href="#tabview" style="color: #0071e3; text-decoration: none;">TabView</a></li>
-                    <li><a href="#group" style="color: #0071e3; text-decoration: none;">Group</a></li>
-                    <li><a href="#alignment" style="color: #0071e3; text-decoration: none;">alignment</a></li>
-                    <li><a href="#spacing" style="color: #0071e3; text-decoration: none;">spacing</a></li>
-                    <li><a href="#safearea" style="color: #0071e3; text-decoration: none;">SafeArea</a></li>
-                    <li><a href="#aspectratio" style="color: #0071e3; text-decoration: none;">.aspectRatio()</a></li>
-                    <li><a href="#resizable" style="color: #0071e3; text-decoration: none;">.resizable()</a></li>
-                </ul>
-            </div>
-
-            <!-- Acronyms -->
-            <div>
-                <h3 style="color: #0071e3; border-bottom: 2px solid #0071e3; padding-bottom: 8px; margin-bottom: 15px;">🔤 Acronyms</h3>
-                <ul style="list-style: none; padding-left: 0; line-height: 1.8; column-count: 2; column-gap: 20px;">
-                    <li><a href="#ui" style="color: #0071e3; text-decoration: none;">UI</a></li>
-                    <li><a href="#ux" style="color: #0071e3; text-decoration: none;">UX</a></li>
-                    <li><a href="#api" style="color: #0071e3; text-decoration: none;">API</a></li>
-                    <li><a href="#sdk" style="color: #0071e3; text-decoration: none;">SDK</a></li>
-                    <li><a href="#ide" style="color: #0071e3; text-decoration: none;">IDE</a></li>
-                    <li><a href="#json" style="color: #0071e3; text-decoration: none;">JSON</a></li>
-                    <li><a href="#url" style="color: #0071e3; text-decoration: none;">URL</a></li>
-                    <li><a href="#http" style="color: #0071e3; text-decoration: none;">HTTP</a></li>
-                    <li><a href="#rest" style="color: #0071e3; text-decoration: none;">REST</a></li>
-                    <li><a href="#mvvm" style="color: #0071e3; text-decoration: none;">MVVM</a></li>
-                    <li><a href="#mvc" style="color: #0071e3; text-decoration: none;">MVC</a></li>
-                    <li><a href="#sf" style="color: #0071e3; text-decoration: none;">SF</a></li>
-                    <li><a href="#wwdc" style="color: #0071e3; text-decoration: none;">WWDC</a></li>
-                    <li><a href="#ios" style="color: #0071e3; text-decoration: none;">iOS</a></li>
-                    <li><a href="#macos" style="color: #0071e3; text-decoration: none;">macOS</a></li>
-                    <li><a href="#cpu" style="color: #0071e3; text-decoration: none;">CPU</a></li>
-                    <li><a href="#gpu" style="color: #0071e3; text-decoration: none;">GPU</a></li>
-                    <li><a href="#ram" style="color: #0071e3; text-decoration: none;">RAM</a></li>
-                    <li><a href="#crud" style="color: #0071e3; text-decoration: none;">CRUD</a></li>
-                    <li><a href="#csv" style="color: #0071e3; text-decoration: none;">CSV</a></li>
-                    <li><a href="#xml" style="color: #0071e3; text-decoration: none;">XML</a></li>
-                    <li><a href="#os" style="color: #0071e3; text-decoration: none;">OS</a></li>
-                    <li><a href="#dry" style="color: #0071e3; text-decoration: none;">DRY</a></li>
-                    <li><a href="#git" style="color: #0071e3; text-decoration: none;">GIT</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-    <h2>🔧 General Xcode & Swift Terms</h2>
+<h2>🔧 General Xcode & Swift Terms</h2>
     <table>
         <thead>
             <tr>
@@ -396,51 +359,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr id="var">
-                <td><span class="term">var</span></td>
-                <td>A keyword used to declare a variable whose value can change after it's set. Variables are mutable, meaning you can modify their values throughout your code. Use <code>var</code> when you know the value will need to be updated later.</td>
+            <tr id="array">
+                <td><span class="term">Array</span></td>
+                <td>An ordered collection of values of the same type. Arrays allow duplicates and maintain insertion order. Access elements by index (starting at 0). Arrays are mutable if declared with <code>var</code> and immutable with <code>let</code>. One of the most commonly used collection types.</td>
                 <td>
-                    <div class="example">var userName = "John"<br>userName = "Jane" // Can change</div>
-                    <div class="example">var score = 0<br>score += 10 // Now 10</div>
-                </td>
-            </tr>
-            <tr id="let">
-                <td><span class="term">let</span></td>
-                <td>A keyword used to declare a constant whose value cannot change after it's initially set. Constants are immutable, providing safety and clarity in your code. Use <code>let</code> when the value should remain the same throughout the program. Swift encourages using constants whenever possible.</td>
-                <td>
-                    <div class="example">let appName = "WM8b"<br>// appName = "Other" ❌ Error!</div>
-                    <div class="example">let pi = 3.14159<br>let maxUsers = 100</div>
-                </td>
-            </tr>
-            <tr id="func">
-                <td><span class="term">func</span></td>
-                <td>Short for "function" - a reusable block of code that performs a specific task. Functions can take inputs (parameters) and return outputs (return values). They help organize your code into logical, reusable pieces. Functions can be called multiple times throughout your program.</td>
-                <td>
-                    <div class="example">func greet(name: String) {<br>&nbsp;&nbsp;print("Hello, \(name)!")<br>}<br>greet(name: "Alice")</div>
-                    <div class="example">func add(a: Int, b: Int) -> Int {<br>&nbsp;&nbsp;return a + b<br>}</div>
-                </td>
-            </tr>
-            <tr id="struct">
-                <td><span class="term">struct</span></td>
-                <td>A structure is a custom data type that groups related properties and functions together. Structs are value types (they're copied when passed around). In SwiftUI, views are structs. They're lightweight and safe because each copy is independent. Great for modeling data and creating SwiftUI views.</td>
-                <td>
-                    <div class="example">struct User {<br>&nbsp;&nbsp;var name: String<br>&nbsp;&nbsp;var age: Int<br>}</div>
-                    <div class="example">struct ContentView: View {<br>&nbsp;&nbsp;var body: some View {<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("Hello")<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="class">
-                <td><span class="term">class</span></td>
-                <td>A reference type that defines an object with properties and methods. Unlike structs, classes are reference types (they're shared, not copied). Classes support inheritance (one class can inherit from another). Use classes when you need shared state or inheritance. In SwiftUI, you'll often use classes for ObservableObject types.</td>
-                <td>
-                    <div class="example">class ViewModel: ObservableObject {<br>&nbsp;&nbsp;@Published var count = 0<br>&nbsp;&nbsp;func increment() {<br>&nbsp;&nbsp;&nbsp;&nbsp;count += 1<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="state">
-                <td><span class="term">@State</span></td>
-                <td>A property wrapper that tells SwiftUI to monitor a variable for changes and update the view automatically when it changes. Use <code>@State</code> for simple values that are owned by a single view. When the state changes, SwiftUI re-renders the view. This is fundamental for creating interactive interfaces. State should be private to the view.</td>
-                <td>
-                    <div class="example">@State private var isOn = false<br>Toggle("Switch", isOn: $isOn)</div>
-                    <div class="example">@State private var count = 0<br>Button("Tap") { count += 1 }<br>Text("\(count)")</div>
+                    <div class="example">var numbers = [1, 2, 3, 4, 5]<br>numbers.append(6)<br>let first = numbers[0]</div>
+                    <div class="example">let names = ["Alice", "Bob", "Charlie"]<br>for name in names {<br>&nbsp;&nbsp;print(name)<br>}</div>
                 </td>
             </tr>
             <tr id="binding">
@@ -450,25 +374,41 @@
                     <div class="example">struct ChildView: View {<br>&nbsp;&nbsp;@Binding var text: String<br>&nbsp;&nbsp;var body: some View {<br>&nbsp;&nbsp;&nbsp;&nbsp;TextField("Enter", text: $text)<br>&nbsp;&nbsp;}<br>}</div>
                 </td>
             </tr>
-            <tr id="stateobject">
-                <td><span class="term">@StateObject</span></td>
-                <td>A property wrapper used to create and own an observable object within a view. Use <code>@StateObject</code> when a view creates an instance of an ObservableObject. The object persists as long as the view exists. SwiftUI manages the object's lifecycle. Use this for view models that should survive view updates.</td>
+            <tr id="class">
+                <td><span class="term">class</span></td>
+                <td>A reference type that defines an object with properties and methods. Unlike structs, classes are reference types (they're shared, not copied). Classes support inheritance (one class can inherit from another). Use classes when you need shared state or inheritance. In SwiftUI, you'll often use classes for ObservableObject types.</td>
                 <td>
-                    <div class="example">@StateObject var viewModel = GameViewModel()<br><br>// ViewModel persists across view updates</div>
+                    <div class="example">class ViewModel: ObservableObject {<br>&nbsp;&nbsp;@Published var count = 0<br>&nbsp;&nbsp;func increment() {<br>&nbsp;&nbsp;&nbsp;&nbsp;count += 1<br>&nbsp;&nbsp;}<br>}</div>
                 </td>
             </tr>
-            <tr id="observedobject">
-                <td><span class="term">@ObservedObject</span></td>
-                <td>A property wrapper for subscribing to an observable object that's owned elsewhere. Use <code>@ObservedObject</code> when an object is passed into a view from a parent. The view watches for changes but doesn't own the object. When the object publishes changes, the view updates. Similar to @StateObject but doesn't create the object.</td>
+            <tr id="closure">
+                <td><span class="term">Closure</span></td>
+                <td>A self-contained block of code that can be passed around and used in your code. Similar to functions but can be anonymous and capture values from their surrounding context. Often used as completion handlers, callbacks, and for functional programming. Can be stored in variables and passed as parameters.</td>
                 <td>
-                    <div class="example">struct DetailView: View {<br>&nbsp;&nbsp;@ObservedObject var viewModel: UserViewModel<br>&nbsp;&nbsp;// Object passed from parent<br>}</div>
+                    <div class="example">let greeting = { (name: String) in<br>&nbsp;&nbsp;print("Hello, \(name)")<br>}<br>greeting("Bob")</div>
+                    <div class="example">Button("Tap") {<br>&nbsp;&nbsp;print("Tapped!")<br>} // Closure as button action</div>
                 </td>
             </tr>
-            <tr id="published">
-                <td><span class="term">@Published</span></td>
-                <td>A property wrapper used inside ObservableObject classes to announce when a property changes. Any view observing this object will automatically update when a @Published property changes. Essential for the ObservableObject pattern. Causes the objectWillChange publisher to fire.</td>
+            <tr id="computedproperty">
+                <td><span class="term">Computed Property</span></td>
+                <td>A property that doesn't store a value but calculates it each time it's accessed. Uses <code>get</code> to retrieve the value and optionally <code>set</code> to modify other properties. Useful for derived values that depend on other properties. Helps keep your code DRY (Don't Repeat Yourself).</td>
                 <td>
-                    <div class="example">class DataModel: ObservableObject {<br>&nbsp;&nbsp;@Published var items: [String] = []<br>&nbsp;&nbsp;@Published var isLoading = false<br>}</div>
+                    <div class="example">struct Rectangle {<br>&nbsp;&nbsp;var width: Double<br>&nbsp;&nbsp;var height: Double<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;var area: Double {<br>&nbsp;&nbsp;&nbsp;&nbsp;width * height<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="dictionary">
+                <td><span class="term">Dictionary</span></td>
+                <td>A collection of key-value pairs where each key is unique. Provides fast lookup of values by their keys. Keys must be hashable (strings, integers, etc.). Access returns an optional because the key might not exist. Unordered collection.</td>
+                <td>
+                    <div class="example">var ages = ["Alice": 25, "Bob": 30]<br>ages["Charlie"] = 28<br>if let age = ages["Alice"] {<br>&nbsp;&nbsp;print(age)<br>}</div>
+                </td>
+            </tr>
+            <tr id="enum">
+                <td><span class="term">Enum</span></td>
+                <td>Short for "enumeration" - defines a type with a fixed set of possible values (cases). Enums are great for representing a finite set of related values. They can have associated values and methods. Type-safe alternative to using strings or integers. Switch statements work perfectly with enums.</td>
+                <td>
+                    <div class="example">enum Direction {<br>&nbsp;&nbsp;case north, south<br>&nbsp;&nbsp;case east, west<br>}</div>
+                    <div class="example">enum LoadingState {<br>&nbsp;&nbsp;case idle<br>&nbsp;&nbsp;case loading<br>&nbsp;&nbsp;case success(Data)<br>&nbsp;&nbsp;case failure(Error)<br>}</div>
                 </td>
             </tr>
             <tr id="environment">
@@ -486,12 +426,19 @@
                     <div class="example">@EnvironmentObject var settings: AppSettings<br><br>// Parent view:<br>.environmentObject(AppSettings())</div>
                 </td>
             </tr>
-            <tr id="optional">
-                <td><span class="term">Optional</span></td>
-                <td>A type that can hold either a value or nothing (nil). Optionals are crucial for safety - they force you to handle the absence of a value. Declared with a question mark after the type. You must unwrap optionals before using their values. Prevents crashes from unexpected nil values.</td>
+            <tr id="extension">
+                <td><span class="term">Extension</span></td>
+                <td>A way to add new functionality to existing types (classes, structs, enums, protocols) without modifying their original source code. You can add methods, computed properties, initializers, and more. Extensions help organize code and add features to types you don't own (like Apple's types). Very powerful for code organization.</td>
                 <td>
-                    <div class="example">var name: String? = nil<br>name = "Alice"</div>
-                    <div class="example">if let unwrapped = name {<br>&nbsp;&nbsp;print(unwrapped)<br>}</div>
+                    <div class="example">extension String {<br>&nbsp;&nbsp;var isEmail: Bool {<br>&nbsp;&nbsp;&nbsp;&nbsp;contains("@")<br>&nbsp;&nbsp;}<br>}<br>"test@email.com".isEmail</div>
+                </td>
+            </tr>
+            <tr id="func">
+                <td><span class="term">func</span></td>
+                <td>Short for "function" - a reusable block of code that performs a specific task. Functions can take inputs (parameters) and return outputs (return values). They help organize your code into logical, reusable pieces. Functions can be called multiple times throughout your program.</td>
+                <td>
+                    <div class="example">func greet(name: String) {<br>&nbsp;&nbsp;print("Hello, \(name)!")<br>}<br>greet(name: "Alice")</div>
+                    <div class="example">func add(a: Int, b: Int) -> Int {<br>&nbsp;&nbsp;return a + b<br>}</div>
                 </td>
             </tr>
             <tr id="guard">
@@ -508,11 +455,41 @@
                     <div class="example">if let email = user.email {<br>&nbsp;&nbsp;sendMessage(to: email)<br>} else {<br>&nbsp;&nbsp;print("No email found")<br>}</div>
                 </td>
             </tr>
-            <tr id="extension">
-                <td><span class="term">Extension</span></td>
-                <td>A way to add new functionality to existing types (classes, structs, enums, protocols) without modifying their original source code. You can add methods, computed properties, initializers, and more. Extensions help organize code and add features to types you don't own (like Apple's types). Very powerful for code organization.</td>
+            <tr id="import">
+                <td><span class="term">Import</span></td>
+                <td>A statement that makes frameworks, libraries, or modules available in your code. Imports give you access to external code and functionality. SwiftUI apps commonly import SwiftUI, Foundation, and other frameworks. Must appear at the top of your Swift files.</td>
                 <td>
-                    <div class="example">extension String {<br>&nbsp;&nbsp;var isEmail: Bool {<br>&nbsp;&nbsp;&nbsp;&nbsp;contains("@")<br>&nbsp;&nbsp;}<br>}<br>"test@email.com".isEmail</div>
+                    <div class="example">import SwiftUI<br>import Foundation<br>import CoreLocation</div>
+                </td>
+            </tr>
+            <tr id="initializer">
+                <td><span class="term">Initializer (init)</span></td>
+                <td>A special method that creates and prepares a new instance of a struct or class. Sets up initial values for properties. Can have parameters to customize initialization. Every property must have a value by the end of initialization. Structs get automatic memberwise initializers.</td>
+                <td>
+                    <div class="example">struct User {<br>&nbsp;&nbsp;var name: String<br>&nbsp;&nbsp;var age: Int<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;init(name: String, age: Int) {<br>&nbsp;&nbsp;&nbsp;&nbsp;self.name = name<br>&nbsp;&nbsp;&nbsp;&nbsp;self.age = age<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="let">
+                <td><span class="term">let</span></td>
+                <td>A keyword used to declare a constant whose value cannot change after it's initially set. Constants are immutable, providing safety and clarity in your code. Use <code>let</code> when the value should remain the same throughout the program. Swift encourages using constants whenever possible.</td>
+                <td>
+                    <div class="example">let appName = "WM8b"<br>// appName = "Other" ❌ Error!</div>
+                    <div class="example">let pi = 3.14159<br>let maxUsers = 100</div>
+                </td>
+            </tr>
+            <tr id="observedobject">
+                <td><span class="term">@ObservedObject</span></td>
+                <td>A property wrapper for subscribing to an observable object that's owned elsewhere. Use <code>@ObservedObject</code> when an object is passed into a view from a parent. The view watches for changes but doesn't own the object. When the object publishes changes, the view updates. Similar to @StateObject but doesn't create the object.</td>
+                <td>
+                    <div class="example">struct DetailView: View {<br>&nbsp;&nbsp;@ObservedObject var viewModel: UserViewModel<br>&nbsp;&nbsp;// Object passed from parent<br>}</div>
+                </td>
+            </tr>
+            <tr id="optional">
+                <td><span class="term">Optional</span></td>
+                <td>A type that can hold either a value or nothing (nil). Optionals are crucial for safety - they force you to handle the absence of a value. Declared with a question mark after the type. You must unwrap optionals before using their values. Prevents crashes from unexpected nil values.</td>
+                <td>
+                    <div class="example">var name: String? = nil<br>name = "Alice"</div>
+                    <div class="example">if let unwrapped = name {<br>&nbsp;&nbsp;print(unwrapped)<br>}</div>
                 </td>
             </tr>
             <tr id="protocol">
@@ -522,35 +499,41 @@
                     <div class="example">protocol Drivable {<br>&nbsp;&nbsp;var speed: Int { get }<br>&nbsp;&nbsp;func drive()<br>}<br><br>struct Car: Drivable {<br>&nbsp;&nbsp;var speed = 60<br>&nbsp;&nbsp;func drive() { }<br>}</div>
                 </td>
             </tr>
-            <tr id="enum">
-                <td><span class="term">Enum</span></td>
-                <td>Short for "enumeration" - defines a type with a fixed set of possible values (cases). Enums are great for representing a finite set of related values. They can have associated values and methods. Type-safe alternative to using strings or integers. Switch statements work perfectly with enums.</td>
+            <tr id="published">
+                <td><span class="term">@Published</span></td>
+                <td>A property wrapper used inside ObservableObject classes to announce when a property changes. Any view observing this object will automatically update when a @Published property changes. Essential for the ObservableObject pattern. Causes the objectWillChange publisher to fire.</td>
                 <td>
-                    <div class="example">enum Direction {<br>&nbsp;&nbsp;case north, south<br>&nbsp;&nbsp;case east, west<br>}</div>
-                    <div class="example">enum LoadingState {<br>&nbsp;&nbsp;case idle<br>&nbsp;&nbsp;case loading<br>&nbsp;&nbsp;case success(Data)<br>&nbsp;&nbsp;case failure(Error)<br>}</div>
+                    <div class="example">class DataModel: ObservableObject {<br>&nbsp;&nbsp;@Published var items: [String] = []<br>&nbsp;&nbsp;@Published var isLoading = false<br>}</div>
                 </td>
             </tr>
-            <tr id="closure">
-                <td><span class="term">Closure</span></td>
-                <td>A self-contained block of code that can be passed around and used in your code. Similar to functions but can be anonymous and capture values from their surrounding context. Often used as completion handlers, callbacks, and for functional programming. Can be stored in variables and passed as parameters.</td>
+            <tr id="selfself">
+                <td><span class="term">Self vs self</span></td>
+                <td><code>self</code> (lowercase) refers to the current instance of a type. Used to access properties and methods of the current object. <code>Self</code> (uppercase) refers to the type itself, useful in protocols and type methods. Understanding the difference is important for clarity in your code.</td>
                 <td>
-                    <div class="example">let greeting = { (name: String) in<br>&nbsp;&nbsp;print("Hello, \(name)")<br>}<br>greeting("Bob")</div>
-                    <div class="example">Button("Tap") {<br>&nbsp;&nbsp;print("Tapped!")<br>} // Closure as button action</div>
+                    <div class="example">struct Counter {<br>&nbsp;&nbsp;var value = 0<br>&nbsp;&nbsp;func increment() {<br>&nbsp;&nbsp;&nbsp;&nbsp;// self.value += 1<br>&nbsp;&nbsp;}<br>}</div>
                 </td>
             </tr>
-            <tr id="array">
-                <td><span class="term">Array</span></td>
-                <td>An ordered collection of values of the same type. Arrays allow duplicates and maintain insertion order. Access elements by index (starting at 0). Arrays are mutable if declared with <code>var</code> and immutable with <code>let</code>. One of the most commonly used collection types.</td>
+            <tr id="state">
+                <td><span class="term">@State</span></td>
+                <td>A property wrapper that tells SwiftUI to monitor a variable for changes and update the view automatically when it changes. Use <code>@State</code> for simple values that are owned by a single view. When the state changes, SwiftUI re-renders the view. This is fundamental for creating interactive interfaces. State should be private to the view.</td>
                 <td>
-                    <div class="example">var numbers = [1, 2, 3, 4, 5]<br>numbers.append(6)<br>let first = numbers[0]</div>
-                    <div class="example">let names = ["Alice", "Bob", "Charlie"]<br>for name in names {<br>&nbsp;&nbsp;print(name)<br>}</div>
+                    <div class="example">@State private var isOn = false<br>Toggle("Switch", isOn: $isOn)</div>
+                    <div class="example">@State private var count = 0<br>Button("Tap") { count += 1 }<br>Text("\(count)")</div>
                 </td>
             </tr>
-            <tr id="dictionary">
-                <td><span class="term">Dictionary</span></td>
-                <td>A collection of key-value pairs where each key is unique. Provides fast lookup of values by their keys. Keys must be hashable (strings, integers, etc.). Access returns an optional because the key might not exist. Unordered collection.</td>
+            <tr id="stateobject">
+                <td><span class="term">@StateObject</span></td>
+                <td>A property wrapper used to create and own an observable object within a view. Use <code>@StateObject</code> when a view creates an instance of an ObservableObject. The object persists as long as the view exists. SwiftUI manages the object's lifecycle. Use this for view models that should survive view updates.</td>
                 <td>
-                    <div class="example">var ages = ["Alice": 25, "Bob": 30]<br>ages["Charlie"] = 28<br>if let age = ages["Alice"] {<br>&nbsp;&nbsp;print(age)<br>}</div>
+                    <div class="example">@StateObject var viewModel = GameViewModel()<br><br>// ViewModel persists across view updates</div>
+                </td>
+            </tr>
+            <tr id="struct">
+                <td><span class="term">struct</span></td>
+                <td>A structure is a custom data type that groups related properties and functions together. Structs are value types (they're copied when passed around). In SwiftUI, views are structs. They're lightweight and safe because each copy is independent. Great for modeling data and creating SwiftUI views.</td>
+                <td>
+                    <div class="example">struct User {<br>&nbsp;&nbsp;var name: String<br>&nbsp;&nbsp;var age: Int<br>}</div>
+                    <div class="example">struct ContentView: View {<br>&nbsp;&nbsp;var body: some View {<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("Hello")<br>&nbsp;&nbsp;}<br>}</div>
                 </td>
             </tr>
             <tr id="tuple">
@@ -568,32 +551,12 @@
                     <div class="example">let age = 25 // Swift infers Int<br>let name = "Alice" // Swift infers String<br>let items = [1, 2, 3] // [Int]</div>
                 </td>
             </tr>
-            <tr id="initializer">
-                <td><span class="term">Initializer (init)</span></td>
-                <td>A special method that creates and prepares a new instance of a struct or class. Sets up initial values for properties. Can have parameters to customize initialization. Every property must have a value by the end of initialization. Structs get automatic memberwise initializers.</td>
+            <tr id="var">
+                <td><span class="term">var</span></td>
+                <td>A keyword used to declare a variable whose value can change after it's set. Variables are mutable, meaning you can modify their values throughout your code. Use <code>var</code> when you know the value will need to be updated later.</td>
                 <td>
-                    <div class="example">struct User {<br>&nbsp;&nbsp;var name: String<br>&nbsp;&nbsp;var age: Int<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;init(name: String, age: Int) {<br>&nbsp;&nbsp;&nbsp;&nbsp;self.name = name<br>&nbsp;&nbsp;&nbsp;&nbsp;self.age = age<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="computedproperty">
-                <td><span class="term">Computed Property</span></td>
-                <td>A property that doesn't store a value but calculates it each time it's accessed. Uses <code>get</code> to retrieve the value and optionally <code>set</code> to modify other properties. Useful for derived values that depend on other properties. Helps keep your code DRY (Don't Repeat Yourself).</td>
-                <td>
-                    <div class="example">struct Rectangle {<br>&nbsp;&nbsp;var width: Double<br>&nbsp;&nbsp;var height: Double<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;var area: Double {<br>&nbsp;&nbsp;&nbsp;&nbsp;width * height<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="selfself">
-                <td><span class="term">Self vs self</span></td>
-                <td><code>self</code> (lowercase) refers to the current instance of a type. Used to access properties and methods of the current object. <code>Self</code> (uppercase) refers to the type itself, useful in protocols and type methods. Understanding the difference is important for clarity in your code.</td>
-                <td>
-                    <div class="example">struct Counter {<br>&nbsp;&nbsp;var value = 0<br>&nbsp;&nbsp;func increment() {<br>&nbsp;&nbsp;&nbsp;&nbsp;// self.value += 1<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="import">
-                <td><span class="term">Import</span></td>
-                <td>A statement that makes frameworks, libraries, or modules available in your code. Imports give you access to external code and functionality. SwiftUI apps commonly import SwiftUI, Foundation, and other frameworks. Must appear at the top of your Swift files.</td>
-                <td>
-                    <div class="example">import SwiftUI<br>import Foundation<br>import CoreLocation</div>
+                    <div class="example">var userName = "John"<br>userName = "Jane" // Can change</div>
+                    <div class="example">var score = 0<br>score += 10 // Now 10</div>
                 </td>
             </tr>
         </tbody>
@@ -609,13 +572,79 @@
             </tr>
         </thead>
         <tbody>
-            <tr id="padding">
-                <td><span class="term">.padding()</span></td>
-                <td>Adds space around a view's content. Can specify amount and edges. Without parameters, adds default padding on all sides. With parameters, you can control specific edges and amounts. Essential for proper spacing and visual breathing room in your UI.</td>
+            <tr id="accentcolor">
+                <td><span class="term">.accentColor()</span></td>
+                <td>Sets the tint color for interactive elements. Applies to buttons, links, and other tappable items. Deprecated in iOS 15+ in favor of .tint(), but still common. Defines your app's primary interactive color. Can be set app-wide or per-view.</td>
                 <td>
-                    <div class="example">Text("Hello").padding()</div>
-                    <div class="example">Text("Hi").padding(.horizontal, 20)</div>
-                    <div class="example">VStack { }.padding([.top, .bottom], 10)</div>
+                    <div class="example">Button("Tap") { }.accentColor(.purple)</div>
+                    <div class="example">NavigationView { }.accentColor(.green)</div>
+                </td>
+            </tr>
+            <tr id="alert">
+                <td><span class="term">.alert()</span></td>
+                <td>Presents an alert dialog to the user. Shows a title, message, and buttons. Used for important information, confirmations, or errors. Modal - blocks interaction with the rest of the app. Automatically dismisses when a button is tapped. Essential for user communication.</td>
+                <td>
+                    <div class="example">.alert("Error", isPresented: $showAlert) {<br>&nbsp;&nbsp;Button("OK") { }<br>} message: {<br>&nbsp;&nbsp;Text("Something went wrong")<br>}</div>
+                </td>
+            </tr>
+            <tr id="animation">
+                <td><span class="term">.animation()</span></td>
+                <td>Applies an animation to a view when its state changes. Specifies the animation curve and duration. SwiftUI automatically animates changes to animatable properties. Can apply to specific values or all changes. Crucial for creating smooth, polished user experiences.</td>
+                <td>
+                    <div class="example">Circle().scaleEffect(scale).animation(.easeInOut, value: scale)</div>
+                    <div class="example">Text("Fade").opacity(show ? 1 : 0).animation(.default, value: show)</div>
+                </td>
+            </tr>
+            <tr id="background">
+                <td><span class="term">.background()</span></td>
+                <td>Adds a background behind a view. Can be a color, gradient, image, or even another view. The background doesn't affect the view's size. Layers the background behind the view's content. Very versatile for creating visual depth and emphasis.</td>
+                <td>
+                    <div class="example">Text("Hello").background(Color.blue)</div>
+                    <div class="example">VStack { }.background(LinearGradient(...))</div>
+                    <div class="example">Text("Card").background(RoundedRectangle(...).fill(.white))</div>
+                </td>
+            </tr>
+            <tr id="bold">
+                <td><span class="term">.bold()</span></td>
+                <td>Makes text bold (heavier font weight). Can be called on text views or as part of font modifiers. Simple way to add emphasis. Works with any font. Common for headings, buttons, and important information.</td>
+                <td>
+                    <div class="example">Text("Important").bold()</div>
+                    <div class="example">Text("Title").font(.title).bold()</div>
+                </td>
+            </tr>
+            <tr id="clipshape">
+                <td><span class="term">.clipShape()</span></td>
+                <td>Clips a view to a specific shape. More flexible than cornerRadius. Can use any shape: Circle, Capsule, RoundedRectangle, or custom shapes. The view content outside the shape is cut off. Useful for creating circular avatars, custom card shapes, etc.</td>
+                <td>
+                    <div class="example">Image("avatar").clipShape(Circle())</div>
+                    <div class="example">VStack { }.clipShape(RoundedRectangle(cornerRadius: 15))</div>
+                    <div class="example">Text("Pill").clipShape(Capsule())</div>
+                </td>
+            </tr>
+            <tr id="cornerradius">
+                <td><span class="term">.cornerRadius()</span></td>
+                <td>Rounds the corners of a view by a specified radius. Creates smooth, rounded corners instead of sharp 90-degree angles. Applied to the view's clipping shape. Higher values create more rounded corners. Essential for modern, friendly UI design. Zero radius means sharp corners.</td>
+                <td>
+                    <div class="example">Rectangle().fill(.blue).cornerRadius(10)</div>
+                    <div class="example">Image("photo").cornerRadius(15)</div>
+                    <div class="example">VStack { }.background(.white).cornerRadius(20)</div>
+                </td>
+            </tr>
+            <tr id="disabled">
+                <td><span class="term">.disabled()</span></td>
+                <td>Enables or disables user interaction with a view. Takes a Boolean parameter. When disabled, views appear dimmed and don't respond to touches. Useful for form validation and conditional interaction. Affects the view and all its children.</td>
+                <td>
+                    <div class="example">Button("Submit") { }.disabled(username.isEmpty)</div>
+                    <div class="example">TextField("Name", text: $name).disabled(isLocked)</div>
+                </td>
+            </tr>
+            <tr id="font">
+                <td><span class="term">.font()</span></td>
+                <td>Sets the font style, size, and weight for text. Can use system fonts (body, title, headline, etc.) or custom fonts. System fonts automatically adapt to user's accessibility settings. Supports dynamic type for better accessibility. Font choice significantly impacts readability.</td>
+                <td>
+                    <div class="example">Text("Title").font(.title)</div>
+                    <div class="example">Text("Large").font(.system(size: 24))</div>
+                    <div class="example">Text("Bold").font(.headline.bold())</div>
                 </td>
             </tr>
             <tr id="foregroundcolor">
@@ -635,15 +664,6 @@
                     <div class="example">Text("Blue").foregroundStyle(.blue)</div>
                 </td>
             </tr>
-            <tr id="background">
-                <td><span class="term">.background()</span></td>
-                <td>Adds a background behind a view. Can be a color, gradient, image, or even another view. The background doesn't affect the view's size. Layers the background behind the view's content. Very versatile for creating visual depth and emphasis.</td>
-                <td>
-                    <div class="example">Text("Hello").background(Color.blue)</div>
-                    <div class="example">VStack { }.background(LinearGradient(...))</div>
-                    <div class="example">Text("Card").background(RoundedRectangle(...).fill(.white))</div>
-                </td>
-            </tr>
             <tr id="frame">
                 <td><span class="term">.frame()</span></td>
                 <td>Sets the size and alignment of a view. Can specify width, height, or both. Can set minimum, ideal, and maximum sizes. Allows alignment within the frame. Essential for controlling view dimensions. Without frame, views size to their content.</td>
@@ -651,23 +671,6 @@
                     <div class="example">Text("Box").frame(width: 200, height: 100)</div>
                     <div class="example">Color.blue.frame(maxWidth: .infinity)</div>
                     <div class="example">Text("Hi").frame(minWidth: 100, maxHeight: 50)</div>
-                </td>
-            </tr>
-            <tr id="font">
-                <td><span class="term">.font()</span></td>
-                <td>Sets the font style, size, and weight for text. Can use system fonts (body, title, headline, etc.) or custom fonts. System fonts automatically adapt to user's accessibility settings. Supports dynamic type for better accessibility. Font choice significantly impacts readability.</td>
-                <td>
-                    <div class="example">Text("Title").font(.title)</div>
-                    <div class="example">Text("Large").font(.system(size: 24))</div>
-                    <div class="example">Text("Bold").font(.headline.bold())</div>
-                </td>
-            </tr>
-            <tr id="bold">
-                <td><span class="term">.bold()</span></td>
-                <td>Makes text bold (heavier font weight). Can be called on text views or as part of font modifiers. Simple way to add emphasis. Works with any font. Common for headings, buttons, and important information.</td>
-                <td>
-                    <div class="example">Text("Important").bold()</div>
-                    <div class="example">Text("Title").font(.title).bold()</div>
                 </td>
             </tr>
             <tr id="italic">
@@ -678,31 +681,48 @@
                     <div class="example">Text("Emphasis").font(.body).italic()</div>
                 </td>
             </tr>
-            <tr id="cornerradius">
-                <td><span class="term">.cornerRadius()</span></td>
-                <td>Rounds the corners of a view by a specified radius. Creates smooth, rounded corners instead of sharp 90-degree angles. Applied to the view's clipping shape. Higher values create more rounded corners. Essential for modern, friendly UI design. Zero radius means sharp corners.</td>
+            <tr id="liststyle">
+                <td><span class="term">.listStyle()</span></td>
+                <td>Changes the appearance of a List view. Options include .plain, .grouped, .insetGrouped, .sidebar, and more. Each style has a different visual presentation and spacing. Choose based on content type and platform. Affects the entire list's appearance.</td>
                 <td>
-                    <div class="example">Rectangle().fill(.blue).cornerRadius(10)</div>
-                    <div class="example">Image("photo").cornerRadius(15)</div>
-                    <div class="example">VStack { }.background(.white).cornerRadius(20)</div>
+                    <div class="example">List { }.listStyle(.grouped)</div>
+                    <div class="example">List { }.listStyle(.insetGrouped)</div>
                 </td>
             </tr>
-            <tr id="clipshape">
-                <td><span class="term">.clipShape()</span></td>
-                <td>Clips a view to a specific shape. More flexible than cornerRadius. Can use any shape: Circle, Capsule, RoundedRectangle, or custom shapes. The view content outside the shape is cut off. Useful for creating circular avatars, custom card shapes, etc.</td>
+            <tr id="navigationbartitledisplaymode">
+                <td><span class="term">.navigationBarTitleDisplayMode()</span></td>
+                <td>Controls how the navigation title is displayed. Options include .large (big title), .inline (small title), and .automatic. Large titles are more prominent and scroll to inline. Inline titles are always small. Affects the visual hierarchy and feel of your navigation.</td>
                 <td>
-                    <div class="example">Image("avatar").clipShape(Circle())</div>
-                    <div class="example">VStack { }.clipShape(RoundedRectangle(cornerRadius: 15))</div>
-                    <div class="example">Text("Pill").clipShape(Capsule())</div>
+                    <div class="example">.navigationTitle("Details").navigationBarTitleDisplayMode(.inline)</div>
                 </td>
             </tr>
-            <tr id="shadow">
-                <td><span class="term">.shadow()</span></td>
-                <td>Adds a shadow effect around a view. Specify color, radius (blur), and offset (x, y position). Creates depth and elevation in your UI. Larger radius means more blur. Offset determines shadow direction. Can be subtle or dramatic based on parameters.</td>
+            <tr id="navigationtitle">
+                <td><span class="term">.navigationTitle()</span></td>
+                <td>Sets the title displayed in a navigation bar. Only works inside a NavigationView or NavigationStack. The title appears at the top of the screen. Automatically resizes and adjusts based on scroll position (large title behavior). Essential for navigation hierarchy clarity.</td>
                 <td>
-                    <div class="example">Text("Card").shadow(radius: 5)</div>
-                    <div class="example">RoundedRectangle().shadow(color: .gray, radius: 10, x: 0, y: 5)</div>
-                    <div class="example">Image("icon").shadow(color: .black.opacity(0.3), radius: 8)</div>
+                    <div class="example">NavigationView {<br>&nbsp;&nbsp;List { }<br>&nbsp;&nbsp;.navigationTitle("My Items")<br>}</div>
+                </td>
+            </tr>
+            <tr id="offset">
+                <td><span class="term">.offset()</span></td>
+                <td>Moves a view from its natural position by specified x and y values. Positive x moves right, negative moves left. Positive y moves down, negative moves up. Doesn't affect layout of other views - it's a visual offset only. Useful for animations and fine-tuning positions.</td>
+                <td>
+                    <div class="example">Text("Moved").offset(x: 20, y: 10)</div>
+                    <div class="example">Image("icon").offset(y: -5)</div>
+                </td>
+            </tr>
+            <tr id="onappear">
+                <td><span class="term">.onAppear()</span></td>
+                <td>Executes code when a view appears on screen. Called after the view is added to the view hierarchy. Useful for loading data, starting animations, or tracking analytics. Commonly used for initialization tasks. Only called once when the view first appears (unless it's removed and re-added).</td>
+                <td>
+                    <div class="example">Text("Hi").onAppear {<br>&nbsp;&nbsp;print("View appeared")<br>&nbsp;&nbsp;loadData()<br>}</div>
+                </td>
+            </tr>
+            <tr id="ondisappear">
+                <td><span class="term">.onDisappear()</span></td>
+                <td>Executes code when a view is about to disappear from screen. Called before the view is removed from the view hierarchy. Useful for cleanup, canceling operations, or saving state. Opposite of onAppear. Good for resource management.</td>
+                <td>
+                    <div class="example">Text("Bye").onDisappear {<br>&nbsp;&nbsp;print("View disappeared")<br>&nbsp;&nbsp;saveData()<br>}</div>
                 </td>
             </tr>
             <tr id="opacity">
@@ -722,12 +742,13 @@
                     <div class="example">Circle().overlay(Image(systemName: "star"))</div>
                 </td>
             </tr>
-            <tr id="offset">
-                <td><span class="term">.offset()</span></td>
-                <td>Moves a view from its natural position by specified x and y values. Positive x moves right, negative moves left. Positive y moves down, negative moves up. Doesn't affect layout of other views - it's a visual offset only. Useful for animations and fine-tuning positions.</td>
+            <tr id="padding">
+                <td><span class="term">.padding()</span></td>
+                <td>Adds space around a view's content. Can specify amount and edges. Without parameters, adds default padding on all sides. With parameters, you can control specific edges and amounts. Essential for proper spacing and visual breathing room in your UI.</td>
                 <td>
-                    <div class="example">Text("Moved").offset(x: 20, y: 10)</div>
-                    <div class="example">Image("icon").offset(y: -5)</div>
+                    <div class="example">Text("Hello").padding()</div>
+                    <div class="example">Text("Hi").padding(.horizontal, 20)</div>
+                    <div class="example">VStack { }.padding([.top, .bottom], 10)</div>
                 </td>
             </tr>
             <tr id="rotationeffect">
@@ -747,49 +768,13 @@
                     <div class="example">Button("Press") { }.scaleEffect(isPressed ? 0.95 : 1.0)</div>
                 </td>
             </tr>
-            <tr id="animation">
-                <td><span class="term">.animation()</span></td>
-                <td>Applies an animation to a view when its state changes. Specifies the animation curve and duration. SwiftUI automatically animates changes to animatable properties. Can apply to specific values or all changes. Crucial for creating smooth, polished user experiences.</td>
+            <tr id="shadow">
+                <td><span class="term">.shadow()</span></td>
+                <td>Adds a shadow effect around a view. Specify color, radius (blur), and offset (x, y position). Creates depth and elevation in your UI. Larger radius means more blur. Offset determines shadow direction. Can be subtle or dramatic based on parameters.</td>
                 <td>
-                    <div class="example">Circle().scaleEffect(scale).animation(.easeInOut, value: scale)</div>
-                    <div class="example">Text("Fade").opacity(show ? 1 : 0).animation(.default, value: show)</div>
-                </td>
-            </tr>
-            <tr id="transition">
-                <td><span class="term">.transition()</span></td>
-                <td>Defines how a view appears and disappears. Used with if statements or conditional rendering. Built-in transitions include slide, scale, opacity, and move. Can create custom transitions. Automatically animated when views are added/removed. Makes UI changes feel natural and polished.</td>
-                <td>
-                    <div class="example">if showView {<br>&nbsp;&nbsp;Text("Hello").transition(.slide)<br>}</div>
-                    <div class="example">Text("Scale").transition(.scale)</div>
-                </td>
-            </tr>
-            <tr id="onappear">
-                <td><span class="term">.onAppear()</span></td>
-                <td>Executes code when a view appears on screen. Called after the view is added to the view hierarchy. Useful for loading data, starting animations, or tracking analytics. Commonly used for initialization tasks. Only called once when the view first appears (unless it's removed and re-added).</td>
-                <td>
-                    <div class="example">Text("Hi").onAppear {<br>&nbsp;&nbsp;print("View appeared")<br>&nbsp;&nbsp;loadData()<br>}</div>
-                </td>
-            </tr>
-            <tr id="ondisappear">
-                <td><span class="term">.onDisappear()</span></td>
-                <td>Executes code when a view is about to disappear from screen. Called before the view is removed from the view hierarchy. Useful for cleanup, canceling operations, or saving state. Opposite of onAppear. Good for resource management.</td>
-                <td>
-                    <div class="example">Text("Bye").onDisappear {<br>&nbsp;&nbsp;print("View disappeared")<br>&nbsp;&nbsp;saveData()<br>}</div>
-                </td>
-            </tr>
-            <tr id="disabled">
-                <td><span class="term">.disabled()</span></td>
-                <td>Enables or disables user interaction with a view. Takes a Boolean parameter. When disabled, views appear dimmed and don't respond to touches. Useful for form validation and conditional interaction. Affects the view and all its children.</td>
-                <td>
-                    <div class="example">Button("Submit") { }.disabled(username.isEmpty)</div>
-                    <div class="example">TextField("Name", text: $name).disabled(isLocked)</div>
-                </td>
-            </tr>
-            <tr id="alert">
-                <td><span class="term">.alert()</span></td>
-                <td>Presents an alert dialog to the user. Shows a title, message, and buttons. Used for important information, confirmations, or errors. Modal - blocks interaction with the rest of the app. Automatically dismisses when a button is tapped. Essential for user communication.</td>
-                <td>
-                    <div class="example">.alert("Error", isPresented: $showAlert) {<br>&nbsp;&nbsp;Button("OK") { }<br>} message: {<br>&nbsp;&nbsp;Text("Something went wrong")<br>}</div>
+                    <div class="example">Text("Card").shadow(radius: 5)</div>
+                    <div class="example">RoundedRectangle().shadow(color: .gray, radius: 10, x: 0, y: 5)</div>
+                    <div class="example">Image("icon").shadow(color: .black.opacity(0.3), radius: 8)</div>
                 </td>
             </tr>
             <tr id="sheet">
@@ -800,18 +785,19 @@
                     <div class="example">Button("Show") { showSheet = true }<br>.sheet(isPresented: $showSheet) {<br>&nbsp;&nbsp;SettingsView()<br>}</div>
                 </td>
             </tr>
-            <tr id="navigationtitle">
-                <td><span class="term">.navigationTitle()</span></td>
-                <td>Sets the title displayed in a navigation bar. Only works inside a NavigationView or NavigationStack. The title appears at the top of the screen. Automatically resizes and adjusts based on scroll position (large title behavior). Essential for navigation hierarchy clarity.</td>
+            <tr id="tabitem">
+                <td><span class="term">.tabItem()</span></td>
+                <td>Defines the icon and label for a tab in a TabView. Shows at the bottom of the screen in tab bar. Requires an image (usually SF Symbol) and text. Users tap to switch between tabs. Essential for multi-section apps with tab-based navigation.</td>
                 <td>
-                    <div class="example">NavigationView {<br>&nbsp;&nbsp;List { }<br>&nbsp;&nbsp;.navigationTitle("My Items")<br>}</div>
+                    <div class="example">Text("Home").tabItem {<br>&nbsp;&nbsp;Image(systemName: "house")<br>&nbsp;&nbsp;Text("Home")<br>}</div>
                 </td>
             </tr>
-            <tr id="navigationbartitledisplaymode">
-                <td><span class="term">.navigationBarTitleDisplayMode()</span></td>
-                <td>Controls how the navigation title is displayed. Options include .large (big title), .inline (small title), and .automatic. Large titles are more prominent and scroll to inline. Inline titles are always small. Affects the visual hierarchy and feel of your navigation.</td>
+            <tr id="tint">
+                <td><span class="term">.tint()</span></td>
+                <td>Modern replacement for accentColor. Sets the tint color for controls and interactive elements. More flexible than accentColor. Introduced in iOS 15. Can accept colors, gradients, and more. Preferred for new code.</td>
                 <td>
-                    <div class="example">.navigationTitle("Details").navigationBarTitleDisplayMode(.inline)</div>
+                    <div class="example">Button("Save") { }.tint(.blue)</div>
+                    <div class="example">TextField("Name", text: $name).tint(.purple)</div>
                 </td>
             </tr>
             <tr id="toolbar">
@@ -821,35 +807,12 @@
                     <div class="example">.toolbar {<br>&nbsp;&nbsp;ToolbarItem(placement: .navigationBarTrailing) {<br>&nbsp;&nbsp;&nbsp;&nbsp;Button("Add") { }<br>&nbsp;&nbsp;}<br>}</div>
                 </td>
             </tr>
-            <tr id="liststyle">
-                <td><span class="term">.listStyle()</span></td>
-                <td>Changes the appearance of a List view. Options include .plain, .grouped, .insetGrouped, .sidebar, and more. Each style has a different visual presentation and spacing. Choose based on content type and platform. Affects the entire list's appearance.</td>
+            <tr id="transition">
+                <td><span class="term">.transition()</span></td>
+                <td>Defines how a view appears and disappears. Used with if statements or conditional rendering. Built-in transitions include slide, scale, opacity, and move. Can create custom transitions. Automatically animated when views are added/removed. Makes UI changes feel natural and polished.</td>
                 <td>
-                    <div class="example">List { }.listStyle(.grouped)</div>
-                    <div class="example">List { }.listStyle(.insetGrouped)</div>
-                </td>
-            </tr>
-            <tr id="tabitem">
-                <td><span class="term">.tabItem()</span></td>
-                <td>Defines the icon and label for a tab in a TabView. Shows at the bottom of the screen in tab bar. Requires an image (usually SF Symbol) and text. Users tap to switch between tabs. Essential for multi-section apps with tab-based navigation.</td>
-                <td>
-                    <div class="example">Text("Home").tabItem {<br>&nbsp;&nbsp;Image(systemName: "house")<br>&nbsp;&nbsp;Text("Home")<br>}</div>
-                </td>
-            </tr>
-            <tr id="accentcolor">
-                <td><span class="term">.accentColor()</span></td>
-                <td>Sets the tint color for interactive elements. Applies to buttons, links, and other tappable items. Deprecated in iOS 15+ in favor of .tint(), but still common. Defines your app's primary interactive color. Can be set app-wide or per-view.</td>
-                <td>
-                    <div class="example">Button("Tap") { }.accentColor(.purple)</div>
-                    <div class="example">NavigationView { }.accentColor(.green)</div>
-                </td>
-            </tr>
-            <tr id="tint">
-                <td><span class="term">.tint()</span></td>
-                <td>Modern replacement for accentColor. Sets the tint color for controls and interactive elements. More flexible than accentColor. Introduced in iOS 15. Can accept colors, gradients, and more. Preferred for new code.</td>
-                <td>
-                    <div class="example">Button("Save") { }.tint(.blue)</div>
-                    <div class="example">TextField("Name", text: $name).tint(.purple)</div>
+                    <div class="example">if showView {<br>&nbsp;&nbsp;Text("Hello").transition(.slide)<br>}</div>
+                    <div class="example">Text("Scale").transition(.scale)</div>
                 </td>
             </tr>
         </tbody>
@@ -865,172 +828,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr id="vstack">
-                <td><span class="term">VStack</span></td>
-                <td>A vertical stack that arranges child views in a vertical line, one below another. The first view is at the top. Can specify spacing between items and alignment (leading, center, trailing). Fundamental for vertical layouts. Each child view stacks below the previous one.</td>
-                <td>
-                    <div class="example">VStack {<br>&nbsp;&nbsp;Text("Top")<br>&nbsp;&nbsp;Text("Middle")<br>&nbsp;&nbsp;Text("Bottom")<br>}</div>
-                    <div class="example">VStack(spacing: 20) {<br>&nbsp;&nbsp;Image("logo")<br>&nbsp;&nbsp;Text("Title")<br>}</div>
-                </td>
-            </tr>
-            <tr id="hstack">
-                <td><span class="term">HStack</span></td>
-                <td>A horizontal stack that arranges child views in a horizontal line, side by side. The first view is on the left (in left-to-right languages). Can specify spacing and alignment (top, center, bottom). Essential for horizontal layouts like buttons in a row or labels next to icons.</td>
-                <td>
-                    <div class="example">HStack {<br>&nbsp;&nbsp;Image(systemName: "star")<br>&nbsp;&nbsp;Text("Favorite")<br>}</div>
-                    <div class="example">HStack(spacing: 10) {<br>&nbsp;&nbsp;Button("Cancel") { }<br>&nbsp;&nbsp;Button("OK") { }<br>}</div>
-                </td>
-            </tr>
-            <tr id="zstack">
-                <td><span class="term">ZStack</span></td>
-                <td>A depth-based stack that overlays views on top of each other. The first view is at the back, each subsequent view layers on top. Can specify alignment for positioning. Perfect for layering images with text, or creating overlays. Think of it as layers in a stack, like papers on a desk.</td>
-                <td>
-                    <div class="example">ZStack {<br>&nbsp;&nbsp;Image("background")<br>&nbsp;&nbsp;Text("Overlay")<br>}</div>
-                    <div class="example">ZStack(alignment: .topTrailing) {<br>&nbsp;&nbsp;Rectangle().fill(.blue)<br>&nbsp;&nbsp;Text("Badge")<br>}</div>
-                </td>
-            </tr>
-            <tr id="spacer">
-                <td><span class="term">Spacer</span></td>
-                <td>A flexible space that expands to push views apart. Takes up all available space between views. Essential for creating flexible layouts. In an HStack, pushes views to the edges horizontally. In a VStack, pushes views apart vertically. Can set minimum length.</td>
-                <td>
-                    <div class="example">HStack {<br>&nbsp;&nbsp;Text("Left")<br>&nbsp;&nbsp;Spacer()<br>&nbsp;&nbsp;Text("Right")<br>}</div>
-                    <div class="example">VStack {<br>&nbsp;&nbsp;Text("Top")<br>&nbsp;&nbsp;Spacer()<br>&nbsp;&nbsp;Text("Bottom")<br>}</div>
-                </td>
-            </tr>
-            <tr id="divider">
-                <td><span class="term">Divider</span></td>
-                <td>A thin line that separates content. Horizontal in VStack, vertical in HStack. Automatically adapts to the context. Useful for visual separation between sections or items. Respects the system's preferred divider style. Simple but effective for organization.</td>
-                <td>
-                    <div class="example">VStack {<br>&nbsp;&nbsp;Text("Section 1")<br>&nbsp;&nbsp;Divider()<br>&nbsp;&nbsp;Text("Section 2")<br>}</div>
-                    <div class="example">HStack {<br>&nbsp;&nbsp;Text("Left")<br>&nbsp;&nbsp;Divider()<br>&nbsp;&nbsp;Text("Right")<br>}</div>
-                </td>
-            </tr>
-            <tr id="scrollview">
-                <td><span class="term">ScrollView</span></td>
-                <td>A scrollable container for content that exceeds the screen size. Can scroll vertically (default), horizontally, or both. Contains a single child view (often a VStack or HStack). Automatically shows/hides scroll indicators. Essential when content is taller or wider than the screen. Provides smooth, native scrolling behavior.</td>
-                <td>
-                    <div class="example">ScrollView {<br>&nbsp;&nbsp;VStack {<br>&nbsp;&nbsp;&nbsp;&nbsp;ForEach(items) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text(item)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}</div>
-                    <div class="example">ScrollView(.horizontal) {<br>&nbsp;&nbsp;HStack { ... }<br>}</div>
-                </td>
-            </tr>
-            <tr id="list">
-                <td><span class="term">List</span></td>
-                <td>A container that displays rows of data in a scrollable list. Optimized for performance with many items (uses cell recycling). Supports sections, swipe actions, and editing. Similar to UITableView in UIKit. Great for displaying collections of data. Automatically handles scrolling and styling. Native look and feel.</td>
-                <td>
-                    <div class="example">List {<br>&nbsp;&nbsp;Text("Item 1")<br>&nbsp;&nbsp;Text("Item 2")<br>}</div>
-                    <div class="example">List(items) { item in<br>&nbsp;&nbsp;Text(item.name)<br>}</div>
-                </td>
-            </tr>
-            <tr id="foreach">
-                <td><span class="term">ForEach</span></td>
-                <td>A structure that creates views from a collection of data. Iterates over an array or range and generates views. Each item must be identifiable (using id or Identifiable protocol). Essential for dynamic content. Often used inside Lists, VStacks, and HStacks. More efficient than manually creating multiple views.</td>
-                <td>
-                    <div class="example">ForEach(0..<5) { index in<br>&nbsp;&nbsp;Text("Row \(index)")<br>}</div>
-                    <div class="example">ForEach(users) { user in<br>&nbsp;&nbsp;UserRow(user: user)<br>}</div>
-                </td>
-            </tr>
-            <tr id="lazyvstack">
-                <td><span class="term">LazyVStack</span></td>
-                <td>A vertical stack that creates views lazily (only when they're about to appear on screen). More memory efficient than VStack for large amounts of content. Use inside ScrollView for better performance. Views are created on-demand as you scroll. Helps prevent memory issues with lots of items.</td>
-                <td>
-                    <div class="example">ScrollView {<br>&nbsp;&nbsp;LazyVStack {<br>&nbsp;&nbsp;&nbsp;&nbsp;ForEach(1...1000) { num in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text("Item \(num)")<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="lazyhstack">
-                <td><span class="term">LazyHStack</span></td>
-                <td>A horizontal stack that creates views lazily (only when needed). More memory efficient than HStack for many items. Use inside horizontal ScrollView. Horizontal equivalent of LazyVStack. Great for image galleries or horizontal carousels with many items.</td>
-                <td>
-                    <div class="example">ScrollView(.horizontal) {<br>&nbsp;&nbsp;LazyHStack {<br>&nbsp;&nbsp;&nbsp;&nbsp;ForEach(photos) { photo in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PhotoView(photo)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="grid">
-                <td><span class="term">Grid</span></td>
-                <td>A container that arranges views in a two-dimensional grid layout (introduced in iOS 16). More flexible than rows and columns alone. Automatically sizes based on content. Supports spanning multiple rows or columns. Modern alternative to using nested stacks for grid layouts. Simplifies complex grid UI.</td>
-                <td>
-                    <div class="example">Grid {<br>&nbsp;&nbsp;GridRow {<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("A")<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("B")<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;GridRow {<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("C")<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("D")<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="lazyvgrid">
-                <td><span class="term">LazyVGrid</span></td>
-                <td>A lazy-loading vertical grid with flexible column layout. Define columns with GridItem, and the grid handles the layout. Creates items on-demand for performance. Great for photo galleries, app icons, or product grids. Automatically wraps to new rows. More flexible than manual row/column stacks.</td>
-                <td>
-                    <div class="example">let columns = [GridItem(.flexible()), GridItem(.flexible())]<br><br>LazyVGrid(columns: columns) {<br>&nbsp;&nbsp;ForEach(items) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;ItemView(item)<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="lazyhgrid">
-                <td><span class="term">LazyHGrid</span></td>
-                <td>A lazy-loading horizontal grid with flexible row layout. Define rows with GridItem, and content flows horizontally. Horizontal equivalent of LazyVGrid. Useful for horizontally scrolling sections with multiple rows. Common in media apps for categories of content.</td>
-                <td>
-                    <div class="example">let rows = [GridItem(.fixed(100)), GridItem(.fixed(100))]<br><br>LazyHGrid(rows: rows) {<br>&nbsp;&nbsp;ForEach(items) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;Image(item.name)<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="geometryreader">
-                <td><span class="term">GeometryReader</span></td>
-                <td>A container that provides its size and coordinate space to its child view. Allows you to create layouts based on available space. The child receives a GeometryProxy with size information. Useful for responsive designs and custom layouts. Often used for creating views that adapt to screen size. Can be tricky - use sparingly.</td>
-                <td>
-                    <div class="example">GeometryReader { geometry in<br>&nbsp;&nbsp;Text("Width: \(geometry.size.width)")<br>}</div>
-                    <div class="example">GeometryReader { geo in<br>&nbsp;&nbsp;Circle()<br>&nbsp;&nbsp;&nbsp;&nbsp;.frame(width: geo.size.width * 0.8)<br>}</div>
-                </td>
-            </tr>
-            <tr id="navigationview">
-                <td><span class="term">NavigationView</span></td>
-                <td>A container that manages a navigation hierarchy and presents a navigation bar. Push and pop views in a stack. Provides back button automatically. Shows navigation title and toolbar. Deprecated in iOS 16 in favor of NavigationStack. Foundation of navigation-based apps. Creates the familiar drill-down experience.</td>
-                <td>
-                    <div class="example">NavigationView {<br>&nbsp;&nbsp;List(items) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;NavigationLink(item.name, destination: DetailView(item))<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="navigationstack">
-                <td><span class="term">NavigationStack</span></td>
-                <td>Modern replacement for NavigationView (iOS 16+). More powerful and flexible for managing navigation state. Supports programmatic navigation and deep linking better. Provides more control over the navigation stack. Recommended for new projects. Works with NavigationLink and navigationDestination.</td>
-                <td>
-                    <div class="example">NavigationStack {<br>&nbsp;&nbsp;List(items) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;NavigationLink(value: item) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text(item.name)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;.navigationDestination(for: Item.self) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;DetailView(item)<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="navigationlink">
-                <td><span class="term">NavigationLink</span></td>
-                <td>A button that triggers navigation to another view. Used inside NavigationView or NavigationStack. The destination view is pushed onto the navigation stack. Automatically shows as a row in Lists with a chevron. Tapping navigates forward; back button appears automatically. Essential for multi-screen apps.</td>
-                <td>
-                    <div class="example">NavigationLink("Details", destination: DetailView())</div>
-                    <div class="example">NavigationLink(destination: ProfileView()) {<br>&nbsp;&nbsp;HStack {<br>&nbsp;&nbsp;&nbsp;&nbsp;Image("avatar")<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("Profile")<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="tabview">
-                <td><span class="term">TabView</span></td>
-                <td>A container that displays multiple child views with a tab bar at the bottom. Users switch between tabs by tapping. Each tab has its own view and tab item (icon and label). Common pattern in iOS apps for top-level navigation. Supports badge counts. Up to 5 tabs typically; more overflow into "More" tab.</td>
-                <td>
-                    <div class="example">TabView {<br>&nbsp;&nbsp;HomeView()<br>&nbsp;&nbsp;&nbsp;&nbsp;.tabItem {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Label("Home", systemImage: "house")<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;SettingsView()<br>&nbsp;&nbsp;&nbsp;&nbsp;.tabItem {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Label("Settings", systemImage: "gear")<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
-            <tr id="group">
-                <td><span class="term">Group</span></td>
-                <td>A container that groups multiple views together without affecting layout. Useful for applying modifiers to multiple views at once. Doesn't add any visual styling or layout behavior. Helps organize code and avoid view count limits. Often used with conditional content and modifiers. Invisible in the layout hierarchy.</td>
-                <td>
-                    <div class="example">Group {<br>&nbsp;&nbsp;Text("Line 1")<br>&nbsp;&nbsp;Text("Line 2")<br>}<br>.font(.title)</div>
-                    <div class="example">Group {<br>&nbsp;&nbsp;if condition {<br>&nbsp;&nbsp;&nbsp;&nbsp;ViewA()<br>&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;ViewB()<br>&nbsp;&nbsp;}<br>}</div>
-                </td>
-            </tr>
             <tr id="alignment">
                 <td><span class="term">alignment</span></td>
                 <td>A parameter in stacks that controls how views are positioned perpendicular to the stack's axis. In VStack: leading, center, trailing. In HStack: top, center, bottom. In ZStack: controls positioning of layered views. Proper alignment is crucial for polished UI. Default is usually center.</td>
                 <td>
                     <div class="example">VStack(alignment: .leading) {<br>&nbsp;&nbsp;Text("Left aligned")<br>&nbsp;&nbsp;Text("Also left")<br>}</div>
                     <div class="example">HStack(alignment: .top) {<br>&nbsp;&nbsp;Image("icon")<br>&nbsp;&nbsp;Text("Text aligns to top")<br>}</div>
-                </td>
-            </tr>
-            <tr id="spacing">
-                <td><span class="term">spacing</span></td>
-                <td>A parameter that sets the distance between child views in a stack. Measured in points. Default spacing varies by context. Can be set to 0 for no space, or any positive number. Consistent spacing improves visual rhythm. Negative values work but are rare.</td>
-                <td>
-                    <div class="example">VStack(spacing: 20) {<br>&nbsp;&nbsp;Text("Spaced")<br>&nbsp;&nbsp;Text("Apart")<br>}</div>
-                    <div class="example">HStack(spacing: 0) {<br>&nbsp;&nbsp;Image("icon1")<br>&nbsp;&nbsp;Image("icon2")<br>}</div>
-                </td>
-            </tr>
-            <tr id="safearea">
-                <td><span class="term">SafeArea</span></td>
-                <td>The portion of the screen not obscured by system UI elements (notch, home indicator, status bar, navigation bar). Views should respect safe area to avoid content being cut off. SwiftUI views automatically respect safe area by default. Can be ignored with .ignoresSafeArea(). Critical for modern iPhone designs.</td>
-                <td>
-                    <div class="example">// Respects safe area by default<br>Text("Safe")</div>
-                    <div class="example">// Ignores safe area<br>Color.blue.ignoresSafeArea()</div>
                 </td>
             </tr>
             <tr id="aspectratio">
@@ -1041,11 +844,171 @@
                     <div class="example">Rectangle().aspectRatio(16/9, contentMode: .fit)</div>
                 </td>
             </tr>
+            <tr id="divider">
+                <td><span class="term">Divider</span></td>
+                <td>A thin line that separates content. Horizontal in VStack, vertical in HStack. Automatically adapts to the context. Useful for visual separation between sections or items. Respects the system's preferred divider style. Simple but effective for organization.</td>
+                <td>
+                    <div class="example">VStack {<br>&nbsp;&nbsp;Text("Section 1")<br>&nbsp;&nbsp;Divider()<br>&nbsp;&nbsp;Text("Section 2")<br>}</div>
+                    <div class="example">HStack {<br>&nbsp;&nbsp;Text("Left")<br>&nbsp;&nbsp;Divider()<br>&nbsp;&nbsp;Text("Right")<br>}</div>
+                </td>
+            </tr>
+            <tr id="foreach">
+                <td><span class="term">ForEach</span></td>
+                <td>A structure that creates views from a collection of data. Iterates over an array or range and generates views. Each item must be identifiable (using id or Identifiable protocol). Essential for dynamic content. Often used inside Lists, VStacks, and HStacks. More efficient than manually creating multiple views.</td>
+                <td>
+                    <div class="example">ForEach(0..<5) { index in<br>&nbsp;&nbsp;Text("Row \(index)")<br>}</div>
+                    <div class="example">ForEach(users) { user in<br>&nbsp;&nbsp;UserRow(user: user)<br>}</div>
+                </td>
+            </tr>
+            <tr id="geometryreader">
+                <td><span class="term">GeometryReader</span></td>
+                <td>A container that provides its size and coordinate space to its child view. Allows you to create layouts based on available space. The child receives a GeometryProxy with size information. Useful for responsive designs and custom layouts. Often used for creating views that adapt to screen size. Can be tricky - use sparingly.</td>
+                <td>
+                    <div class="example">GeometryReader { geometry in<br>&nbsp;&nbsp;Text("Width: \(geometry.size.width)")<br>}</div>
+                    <div class="example">GeometryReader { geo in<br>&nbsp;&nbsp;Circle()<br>&nbsp;&nbsp;&nbsp;&nbsp;.frame(width: geo.size.width * 0.8)<br>}</div>
+                </td>
+            </tr>
+            <tr id="grid">
+                <td><span class="term">Grid</span></td>
+                <td>A container that arranges views in a two-dimensional grid layout (introduced in iOS 16). More flexible than rows and columns alone. Automatically sizes based on content. Supports spanning multiple rows or columns. Modern alternative to using nested stacks for grid layouts. Simplifies complex grid UI.</td>
+                <td>
+                    <div class="example">Grid {<br>&nbsp;&nbsp;GridRow {<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("A")<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("B")<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;GridRow {<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("C")<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("D")<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="group">
+                <td><span class="term">Group</span></td>
+                <td>A container that groups multiple views together without affecting layout. Useful for applying modifiers to multiple views at once. Doesn't add any visual styling or layout behavior. Helps organize code and avoid view count limits. Often used with conditional content and modifiers. Invisible in the layout hierarchy.</td>
+                <td>
+                    <div class="example">Group {<br>&nbsp;&nbsp;Text("Line 1")<br>&nbsp;&nbsp;Text("Line 2")<br>}<br>.font(.title)</div>
+                    <div class="example">Group {<br>&nbsp;&nbsp;if condition {<br>&nbsp;&nbsp;&nbsp;&nbsp;ViewA()<br>&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;ViewB()<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="hstack">
+                <td><span class="term">HStack</span></td>
+                <td>A horizontal stack that arranges child views in a horizontal line, side by side. The first view is on the left (in left-to-right languages). Can specify spacing and alignment (top, center, bottom). Essential for horizontal layouts like buttons in a row or labels next to icons.</td>
+                <td>
+                    <div class="example">HStack {<br>&nbsp;&nbsp;Image(systemName: "star")<br>&nbsp;&nbsp;Text("Favorite")<br>}</div>
+                    <div class="example">HStack(spacing: 10) {<br>&nbsp;&nbsp;Button("Cancel") { }<br>&nbsp;&nbsp;Button("OK") { }<br>}</div>
+                </td>
+            </tr>
+            <tr id="lazyhgrid">
+                <td><span class="term">LazyHGrid</span></td>
+                <td>A lazy-loading horizontal grid with flexible row layout. Define rows with GridItem, and content flows horizontally. Horizontal equivalent of LazyVGrid. Useful for horizontally scrolling sections with multiple rows. Common in media apps for categories of content.</td>
+                <td>
+                    <div class="example">let rows = [GridItem(.fixed(100)), GridItem(.fixed(100))]<br><br>LazyHGrid(rows: rows) {<br>&nbsp;&nbsp;ForEach(items) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;Image(item.name)<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="lazyhstack">
+                <td><span class="term">LazyHStack</span></td>
+                <td>A horizontal stack that creates views lazily (only when needed). More memory efficient than HStack for many items. Use inside horizontal ScrollView. Horizontal equivalent of LazyVStack. Great for image galleries or horizontal carousels with many items.</td>
+                <td>
+                    <div class="example">ScrollView(.horizontal) {<br>&nbsp;&nbsp;LazyHStack {<br>&nbsp;&nbsp;&nbsp;&nbsp;ForEach(photos) { photo in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PhotoView(photo)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="lazyvgrid">
+                <td><span class="term">LazyVGrid</span></td>
+                <td>A lazy-loading vertical grid with flexible column layout. Define columns with GridItem, and the grid handles the layout. Creates items on-demand for performance. Great for photo galleries, app icons, or product grids. Automatically wraps to new rows. More flexible than manual row/column stacks.</td>
+                <td>
+                    <div class="example">let columns = [GridItem(.flexible()), GridItem(.flexible())]<br><br>LazyVGrid(columns: columns) {<br>&nbsp;&nbsp;ForEach(items) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;ItemView(item)<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="lazyvstack">
+                <td><span class="term">LazyVStack</span></td>
+                <td>A vertical stack that creates views lazily (only when they're about to appear on screen). More memory efficient than VStack for large amounts of content. Use inside ScrollView for better performance. Views are created on-demand as you scroll. Helps prevent memory issues with lots of items.</td>
+                <td>
+                    <div class="example">ScrollView {<br>&nbsp;&nbsp;LazyVStack {<br>&nbsp;&nbsp;&nbsp;&nbsp;ForEach(1...1000) { num in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text("Item \(num)")<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="list">
+                <td><span class="term">List</span></td>
+                <td>A container that displays rows of data in a scrollable list. Optimized for performance with many items (uses cell recycling). Supports sections, swipe actions, and editing. Similar to UITableView in UIKit. Great for displaying collections of data. Automatically handles scrolling and styling. Native look and feel.</td>
+                <td>
+                    <div class="example">List {<br>&nbsp;&nbsp;Text("Item 1")<br>&nbsp;&nbsp;Text("Item 2")<br>}</div>
+                    <div class="example">List(items) { item in<br>&nbsp;&nbsp;Text(item.name)<br>}</div>
+                </td>
+            </tr>
+            <tr id="navigationlink">
+                <td><span class="term">NavigationLink</span></td>
+                <td>A button that triggers navigation to another view. Used inside NavigationView or NavigationStack. The destination view is pushed onto the navigation stack. Automatically shows as a row in Lists with a chevron. Tapping navigates forward; back button appears automatically. Essential for multi-screen apps.</td>
+                <td>
+                    <div class="example">NavigationLink("Details", destination: DetailView())</div>
+                    <div class="example">NavigationLink(destination: ProfileView()) {<br>&nbsp;&nbsp;HStack {<br>&nbsp;&nbsp;&nbsp;&nbsp;Image("avatar")<br>&nbsp;&nbsp;&nbsp;&nbsp;Text("Profile")<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="navigationstack">
+                <td><span class="term">NavigationStack</span></td>
+                <td>Modern replacement for NavigationView (iOS 16+). More powerful and flexible for managing navigation state. Supports programmatic navigation and deep linking better. Provides more control over the navigation stack. Recommended for new projects. Works with NavigationLink and navigationDestination.</td>
+                <td>
+                    <div class="example">NavigationStack {<br>&nbsp;&nbsp;List(items) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;NavigationLink(value: item) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text(item.name)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;.navigationDestination(for: Item.self) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;DetailView(item)<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="navigationview">
+                <td><span class="term">NavigationView</span></td>
+                <td>A container that manages a navigation hierarchy and presents a navigation bar. Push and pop views in a stack. Provides back button automatically. Shows navigation title and toolbar. Deprecated in iOS 16 in favor of NavigationStack. Foundation of navigation-based apps. Creates the familiar drill-down experience.</td>
+                <td>
+                    <div class="example">NavigationView {<br>&nbsp;&nbsp;List(items) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;NavigationLink(item.name, destination: DetailView(item))<br>&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
             <tr id="resizable">
                 <td><span class="term">.resizable()</span></td>
                 <td>A modifier that makes an image able to be resized. Without this, images display at their original size. Must be applied before frame or aspectRatio modifiers. Essential for responsive image layouts. Allows the image to scale up or down. Usually combined with aspectRatio to prevent distortion.</td>
                 <td>
                     <div class="example">Image("photo")<br>&nbsp;&nbsp;.resizable()<br>&nbsp;&nbsp;.aspectRatio(contentMode: .fit)<br>&nbsp;&nbsp;.frame(width: 200)</div>
+                </td>
+            </tr>
+            <tr id="safearea">
+                <td><span class="term">SafeArea</span></td>
+                <td>The portion of the screen not obscured by system UI elements (notch, home indicator, status bar, navigation bar). Views should respect safe area to avoid content being cut off. SwiftUI views automatically respect safe area by default. Can be ignored with .ignoresSafeArea(). Critical for modern iPhone designs.</td>
+                <td>
+                    <div class="example">// Respects safe area by default<br>Text("Safe")</div>
+                    <div class="example">// Ignores safe area<br>Color.blue.ignoresSafeArea()</div>
+                </td>
+            </tr>
+            <tr id="scrollview">
+                <td><span class="term">ScrollView</span></td>
+                <td>A scrollable container for content that exceeds the screen size. Can scroll vertically (default), horizontally, or both. Contains a single child view (often a VStack or HStack). Automatically shows/hides scroll indicators. Essential when content is taller or wider than the screen. Provides smooth, native scrolling behavior.</td>
+                <td>
+                    <div class="example">ScrollView {<br>&nbsp;&nbsp;VStack {<br>&nbsp;&nbsp;&nbsp;&nbsp;ForEach(items) { item in<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text(item)<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;}<br>}</div>
+                    <div class="example">ScrollView(.horizontal) {<br>&nbsp;&nbsp;HStack { ... }<br>}</div>
+                </td>
+            </tr>
+            <tr id="spacer">
+                <td><span class="term">Spacer</span></td>
+                <td>A flexible space that expands to push views apart. Takes up all available space between views. Essential for creating flexible layouts. In an HStack, pushes views to the edges horizontally. In a VStack, pushes views apart vertically. Can set minimum length.</td>
+                <td>
+                    <div class="example">HStack {<br>&nbsp;&nbsp;Text("Left")<br>&nbsp;&nbsp;Spacer()<br>&nbsp;&nbsp;Text("Right")<br>}</div>
+                    <div class="example">VStack {<br>&nbsp;&nbsp;Text("Top")<br>&nbsp;&nbsp;Spacer()<br>&nbsp;&nbsp;Text("Bottom")<br>}</div>
+                </td>
+            </tr>
+            <tr id="spacing">
+                <td><span class="term">spacing</span></td>
+                <td>A parameter that sets the distance between child views in a stack. Measured in points. Default spacing varies by context. Can be set to 0 for no space, or any positive number. Consistent spacing improves visual rhythm. Negative values work but are rare.</td>
+                <td>
+                    <div class="example">VStack(spacing: 20) {<br>&nbsp;&nbsp;Text("Spaced")<br>&nbsp;&nbsp;Text("Apart")<br>}</div>
+                    <div class="example">HStack(spacing: 0) {<br>&nbsp;&nbsp;Image("icon1")<br>&nbsp;&nbsp;Image("icon2")<br>}</div>
+                </td>
+            </tr>
+            <tr id="tabview">
+                <td><span class="term">TabView</span></td>
+                <td>A container that displays multiple child views with a tab bar at the bottom. Users switch between tabs by tapping. Each tab has its own view and tab item (icon and label). Common pattern in iOS apps for top-level navigation. Supports badge counts. Up to 5 tabs typically; more overflow into "More" tab.</td>
+                <td>
+                    <div class="example">TabView {<br>&nbsp;&nbsp;HomeView()<br>&nbsp;&nbsp;&nbsp;&nbsp;.tabItem {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Label("Home", systemImage: "house")<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;SettingsView()<br>&nbsp;&nbsp;&nbsp;&nbsp;.tabItem {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Label("Settings", systemImage: "gear")<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</div>
+                </td>
+            </tr>
+            <tr id="vstack">
+                <td><span class="term">VStack</span></td>
+                <td>A vertical stack that arranges child views in a vertical line, one below another. The first view is at the top. Can specify spacing between items and alignment (leading, center, trailing). Fundamental for vertical layouts. Each child view stacks below the previous one.</td>
+                <td>
+                    <div class="example">VStack {<br>&nbsp;&nbsp;Text("Top")<br>&nbsp;&nbsp;Text("Middle")<br>&nbsp;&nbsp;Text("Bottom")<br>}</div>
+                    <div class="example">VStack(spacing: 20) {<br>&nbsp;&nbsp;Image("logo")<br>&nbsp;&nbsp;Text("Title")<br>}</div>
+                </td>
+            </tr>
+            <tr id="zstack">
+                <td><span class="term">ZStack</span></td>
+                <td>A depth-based stack that overlays views on top of each other. The first view is at the back, each subsequent view layers on top. Can specify alignment for positioning. Perfect for layering images with text, or creating overlays. Think of it as layers in a stack, like papers on a desk.</td>
+                <td>
+                    <div class="example">ZStack {<br>&nbsp;&nbsp;Image("background")<br>&nbsp;&nbsp;Text("Overlay")<br>}</div>
+                    <div class="example">ZStack(alignment: .topTrailing) {<br>&nbsp;&nbsp;Rectangle().fill(.blue)<br>&nbsp;&nbsp;Text("Badge")<br>}</div>
                 </td>
             </tr>
         </tbody>
@@ -1061,20 +1024,6 @@
             </tr>
         </thead>
         <tbody>
-            <tr id="ui">
-                <td><span class="term">UI</span></td>
-                <td><strong>User Interface</strong> - The visual elements and interactive components that users see and interact with in an app. Includes buttons, text, images, layouts, and all visual design. SwiftUI is a framework for building UIs. Good UI is intuitive, attractive, and responsive.</td>
-                <td>
-                    <div class="example">"The app has a clean UI"<br>"SwiftUI makes building UIs easier"<br>"UI design principles"</div>
-                </td>
-            </tr>
-            <tr id="ux">
-                <td><span class="term">UX</span></td>
-                <td><strong>User Experience</strong> - The overall experience and satisfaction a user has when using an app. Encompasses usability, accessibility, performance, and emotional response. Good UX means the app is easy, pleasant, and efficient to use. Broader than UI - includes the entire user journey.</td>
-                <td>
-                    <div class="example">"This app has excellent UX"<br>"We need to improve the UX of the checkout flow"<br>"UX research and testing"</div>
-                </td>
-            </tr>
             <tr id="api">
                 <td><span class="term">API</span></td>
                 <td><strong>Application Programming Interface</strong> - A set of rules and protocols that allow different software components to communicate. In iOS development, you use Apple's APIs to access system features. Also refers to web APIs for fetching data from servers. Defines how to request and receive data or functionality.</td>
@@ -1082,109 +1031,11 @@
                     <div class="example">"Call the weather API to get forecast data"<br>"URLSession is Apple's API for networking"<br>"REST API endpoints"</div>
                 </td>
             </tr>
-            <tr id="sdk">
-                <td><span class="term">SDK</span></td>
-                <td><strong>Software Development Kit</strong> - A collection of tools, libraries, documentation, and APIs for developing software for a specific platform. Xcode includes the iOS SDK. Provides everything needed to build apps for a platform. Contains frameworks, simulators, and development tools.</td>
-                <td>
-                    <div class="example">"Download the iOS SDK"<br>"The Firebase SDK for analytics"<br>"SDK documentation"</div>
-                </td>
-            </tr>
-            <tr id="ide">
-                <td><span class="term">IDE</span></td>
-                <td><strong>Integrated Development Environment</strong> - A software application that provides comprehensive tools for software development. Xcode is Apple's IDE for iOS/Mac development. Combines code editor, compiler, debugger, and interface builder. Makes development more efficient with integrated tools.</td>
-                <td>
-                    <div class="example">"Xcode is the IDE for iOS development"<br>"Configure your IDE settings"<br>"Visual Studio Code is a popular IDE"</div>
-                </td>
-            </tr>
-            <tr id="json">
-                <td><span class="term">JSON</span></td>
-                <td><strong>JavaScript Object Notation</strong> - A lightweight data format for storing and transmitting data. Human-readable text format with key-value pairs. Extremely common for web APIs and data storage. Swift has built-in support for encoding/decoding JSON. Uses curly braces and square brackets for structure.</td>
-                <td>
-                    <div class="example">{"name": "Alice", "age": 25}<br><br>"Parse JSON from the API"<br>"JSONDecoder in Swift"</div>
-                </td>
-            </tr>
-            <tr id="url">
-                <td><span class="term">URL</span></td>
-                <td><strong>Uniform Resource Locator</strong> - An address that specifies the location of a resource on the internet. Used to fetch data from web servers or access files. In iOS, URL is a type for representing URLs. Essential for networking and web content. Includes protocol, domain, and path.</td>
-                <td>
-                    <div class="example">https://api.example.com/data<br><br>URL(string: "https://google.com")<br>"Invalid URL format"</div>
-                </td>
-            </tr>
-            <tr id="http">
-                <td><span class="term">HTTP</span></td>
-                <td><strong>Hypertext Transfer Protocol</strong> - The protocol used for transmitting data over the web. Defines how messages are formatted and transmitted. Apps use HTTP to communicate with web servers and APIs. HTTPS is the secure version (encrypted). Request methods include GET, POST, PUT, DELETE.</td>
-                <td>
-                    <div class="example">"Make an HTTP request"<br>"HTTP status code 200 (success)"<br>"HTTP headers and body"</div>
-                </td>
-            </tr>
-            <tr id="rest">
-                <td><span class="term">REST</span></td>
-                <td><strong>Representational State Transfer</strong> - An architectural style for designing networked applications. RESTful APIs use HTTP methods to perform CRUD operations (Create, Read, Update, Delete). Most web APIs follow REST principles. Uses standard HTTP methods and JSON for data. Clean, standardized approach to web services.</td>
-                <td>
-                    <div class="example">"This is a RESTful API"<br>"GET /users (REST endpoint)"<br>"REST architecture principles"</div>
-                </td>
-            </tr>
-            <tr id="mvvm">
-                <td><span class="term">MVVM</span></td>
-                <td><strong>Model-View-ViewModel</strong> - A software architecture pattern that separates UI from business logic. Model: data and business logic. View: the UI (SwiftUI views). ViewModel: connects Model and View, holds UI state. SwiftUI works great with MVVM. Promotes clean, testable code separation.</td>
-                <td>
-                    <div class="example">// Model<br>struct User { }<br><br>// ViewModel<br>class UserViewModel: ObservableObject { }<br><br>// View<br>struct UserView: View { }</div>
-                </td>
-            </tr>
-            <tr id="mvc">
-                <td><span class="term">MVC</span></td>
-                <td><strong>Model-View-Controller</strong> - A software architecture pattern that separates application into three components. Model: data. View: UI presentation. Controller: mediates between Model and View. Traditional pattern in iOS development with UIKit. SwiftUI makes MVVM more natural, but MVC still relevant.</td>
-                <td>
-                    <div class="example">"UIKit uses MVC architecture"<br>"The controller updates the view"<br>"MVC vs MVVM patterns"</div>
-                </td>
-            </tr>
-            <tr id="sf">
-                <td><span class="term">SF</span></td>
-                <td><strong>San Francisco</strong> (in context of SF Symbols) - Apple's system font family and icon set. SF Symbols provides thousands of icons that match the SF font. Free to use in iOS apps. Automatically adapt to text size and weight. Available through the SF Symbols app. Essential resource for iOS iconography.</td>
-                <td>
-                    <div class="example">Image(systemName: "star.fill") // SF Symbol<br><br>Text("Hello").font(.system(size: 16)) // SF font</div>
-                </td>
-            </tr>
-            <tr id="wwdc">
-                <td><span class="term">WWDC</span></td>
-                <td><strong>Worldwide Developers Conference</strong> - Apple's annual developer conference where new technologies, frameworks, and OS versions are announced. Sessions teach new features and best practices. SwiftUI was announced at WWDC 2019. Major source of learning and news for iOS developers. Usually held in June.</td>
-                <td>
-                    <div class="example">"iOS 17 was announced at WWDC 2023"<br>"Watch WWDC sessions to learn new features"<br>"WWDC keynote"</div>
-                </td>
-            </tr>
-            <tr id="ios">
-                <td><span class="term">iOS</span></td>
-                <td><strong>iPhone Operating System</strong> - Apple's mobile operating system for iPhone and iPod Touch. Currently at iOS 17 (as of 2024). Provides frameworks, services, and technologies for app development. Updates annually with new features. Must target minimum iOS version when developing apps.</td>
-                <td>
-                    <div class="example">"This app requires iOS 15 or later"<br>"iOS SDK and frameworks"<br>"Test on different iOS versions"</div>
-                </td>
-            </tr>
-            <tr id="macos">
-                <td><span class="term">macOS</span></td>
-                <td><strong>Mac Operating System</strong> - Apple's desktop operating system for Mac computers. SwiftUI apps can run on both iOS and macOS with minimal changes. Current version is macOS Sonoma. Shares many frameworks with iOS but has unique features. Allows building universal apps.</td>
-                <td>
-                    <div class="example">"Build for macOS using SwiftUI"<br>"macOS-specific features"<br>"Target iOS and macOS"</div>
-                </td>
-            </tr>
             <tr id="cpu">
                 <td><span class="term">CPU</span></td>
                 <td><strong>Central Processing Unit</strong> - The main processor that executes instructions in a device. In iOS devices, Apple's A-series and M-series chips. Heavy computation can cause high CPU usage and battery drain. Efficient code minimizes CPU usage. Monitor CPU usage in Xcode Instruments.</td>
                 <td>
                     <div class="example">"This algorithm uses too much CPU"<br>"CPU usage spikes when processing images"<br>"Optimize for better CPU performance"</div>
-                </td>
-            </tr>
-            <tr id="gpu">
-                <td><span class="term">GPU</span></td>
-                <td><strong>Graphics Processing Unit</strong> - Specialized processor for rendering graphics and visual effects. Handles animations, 3D graphics, and visual effects in apps. SwiftUI animations use the GPU. Metal framework provides direct GPU access. Efficient use of GPU ensures smooth 60fps animations.</td>
-                <td>
-                    <div class="example">"GPU acceleration for animations"<br>"This game requires a powerful GPU"<br>"GPU rendering in Metal"</div>
-                </td>
-            </tr>
-            <tr id="ram">
-                <td><span class="term">RAM</span></td>
-                <td><strong>Random Access Memory</strong> - Temporary memory used by apps for active data. Apps use RAM to store data while running. iOS aggressively manages RAM, terminating apps when memory is low. Memory leaks waste RAM. Instruments helps detect memory issues. Different iPhone models have different amounts of RAM.</td>
-                <td>
-                    <div class="example">"This app uses 200MB of RAM"<br>"Memory leak causing high RAM usage"<br>"Optimize RAM consumption"</div>
                 </td>
             </tr>
             <tr id="crud">
@@ -1201,20 +1052,6 @@
                     <div class="example">name,age,city<br>Alice,25,NYC<br>Bob,30,LA<br><br>"Import CSV file"<br>"Export data to CSV"</div>
                 </td>
             </tr>
-            <tr id="xml">
-                <td><span class="term">XML</span></td>
-                <td><strong>eXtensible Markup Language</strong> - A markup language for storing and transporting data. Uses tags similar to HTML. More verbose than JSON but self-describing. Used in some APIs and file formats. Less common than JSON in modern iOS development. Requires XML parser to use.</td>
-                <td>
-                    <div class="example">&lt;user&gt;<br>&nbsp;&nbsp;&lt;name&gt;Alice&lt;/name&gt;<br>&nbsp;&nbsp;&lt;age&gt;25&lt;/age&gt;<br>&lt;/user&gt;<br><br>"Parse XML response"</div>
-                </td>
-            </tr>
-            <tr id="os">
-                <td><span class="term">OS</span></td>
-                <td><strong>Operating System</strong> - The software that manages hardware and provides services for applications. iOS, macOS, watchOS, tvOS are Apple's operating systems. Provides fundamental services: memory management, file system, networking, security. Apps run on top of the OS. Updates bring new features and APIs.</td>
-                <td>
-                    <div class="example">"iOS is the mobile OS"<br>"OS version compatibility"<br>"Check OS version before using new APIs"</div>
-                </td>
-            </tr>
             <tr id="dry">
                 <td><span class="term">DRY</span></td>
                 <td><strong>Don't Repeat Yourself</strong> - A software development principle that promotes code reusability. Avoid duplicating code - extract common functionality into reusable functions or components. Reduces bugs, makes maintenance easier. If you find yourself copying code, consider extracting it. Use functions, extensions, and modifiers to stay DRY.</td>
@@ -1227,6 +1064,132 @@
                 <td><strong>Not an acronym, but often written in caps</strong> - A distributed version control system for tracking code changes. Essential for collaboration and code history. Xcode has built-in Git support. Allows you to commit changes, create branches, and revert mistakes. Works with GitHub, GitLab, Bitbucket. Every developer should learn Git basics.</td>
                 <td>
                     <div class="example">"Commit your changes with Git"<br>"Create a Git branch for new features"<br>"Push to GitHub repository"</div>
+                </td>
+            </tr>
+            <tr id="gpu">
+                <td><span class="term">GPU</span></td>
+                <td><strong>Graphics Processing Unit</strong> - Specialized processor for rendering graphics and visual effects. Handles animations, 3D graphics, and visual effects in apps. SwiftUI animations use the GPU. Metal framework provides direct GPU access. Efficient use of GPU ensures smooth 60fps animations.</td>
+                <td>
+                    <div class="example">"GPU acceleration for animations"<br>"This game requires a powerful GPU"<br>"GPU rendering in Metal"</div>
+                </td>
+            </tr>
+            <tr id="http">
+                <td><span class="term">HTTP</span></td>
+                <td><strong>Hypertext Transfer Protocol</strong> - The protocol used for transmitting data over the web. Defines how messages are formatted and transmitted. Apps use HTTP to communicate with web servers and APIs. HTTPS is the secure version (encrypted). Request methods include GET, POST, PUT, DELETE.</td>
+                <td>
+                    <div class="example">"Make an HTTP request"<br>"HTTP status code 200 (success)"<br>"HTTP headers and body"</div>
+                </td>
+            </tr>
+            <tr id="ide">
+                <td><span class="term">IDE</span></td>
+                <td><strong>Integrated Development Environment</strong> - A software application that provides comprehensive tools for software development. Xcode is Apple's IDE for iOS/Mac development. Combines code editor, compiler, debugger, and interface builder. Makes development more efficient with integrated tools.</td>
+                <td>
+                    <div class="example">"Xcode is the IDE for iOS development"<br>"Configure your IDE settings"<br>"Visual Studio Code is a popular IDE"</div>
+                </td>
+            </tr>
+            <tr id="ios">
+                <td><span class="term">iOS</span></td>
+                <td><strong>iPhone Operating System</strong> - Apple's mobile operating system for iPhone and iPod Touch. Currently at iOS 17 (as of 2024). Provides frameworks, services, and technologies for app development. Updates annually with new features. Must target minimum iOS version when developing apps.</td>
+                <td>
+                    <div class="example">"This app requires iOS 15 or later"<br>"iOS SDK and frameworks"<br>"Test on different iOS versions"</div>
+                </td>
+            </tr>
+            <tr id="json">
+                <td><span class="term">JSON</span></td>
+                <td><strong>JavaScript Object Notation</strong> - A lightweight data format for storing and transmitting data. Human-readable text format with key-value pairs. Extremely common for web APIs and data storage. Swift has built-in support for encoding/decoding JSON. Uses curly braces and square brackets for structure.</td>
+                <td>
+                    <div class="example">{"name": "Alice", "age": 25}<br><br>"Parse JSON from the API"<br>"JSONDecoder in Swift"</div>
+                </td>
+            </tr>
+            <tr id="macos">
+                <td><span class="term">macOS</span></td>
+                <td><strong>Mac Operating System</strong> - Apple's desktop operating system for Mac computers. SwiftUI apps can run on both iOS and macOS with minimal changes. Current version is macOS Sonoma. Shares many frameworks with iOS but has unique features. Allows building universal apps.</td>
+                <td>
+                    <div class="example">"Build for macOS using SwiftUI"<br>"macOS-specific features"<br>"Target iOS and macOS"</div>
+                </td>
+            </tr>
+            <tr id="mvc">
+                <td><span class="term">MVC</span></td>
+                <td><strong>Model-View-Controller</strong> - A software architecture pattern that separates application into three components. Model: data. View: UI presentation. Controller: mediates between Model and View. Traditional pattern in iOS development with UIKit. SwiftUI makes MVVM more natural, but MVC still relevant.</td>
+                <td>
+                    <div class="example">"UIKit uses MVC architecture"<br>"The controller updates the view"<br>"MVC vs MVVM patterns"</div>
+                </td>
+            </tr>
+            <tr id="mvvm">
+                <td><span class="term">MVVM</span></td>
+                <td><strong>Model-View-ViewModel</strong> - A software architecture pattern that separates UI from business logic. Model: data and business logic. View: the UI (SwiftUI views). ViewModel: connects Model and View, holds UI state. SwiftUI works great with MVVM. Promotes clean, testable code separation.</td>
+                <td>
+                    <div class="example">// Model<br>struct User { }<br><br>// ViewModel<br>class UserViewModel: ObservableObject { }<br><br>// View<br>struct UserView: View { }</div>
+                </td>
+            </tr>
+            <tr id="os">
+                <td><span class="term">OS</span></td>
+                <td><strong>Operating System</strong> - The software that manages hardware and provides services for applications. iOS, macOS, watchOS, tvOS are Apple's operating systems. Provides fundamental services: memory management, file system, networking, security. Apps run on top of the OS. Updates bring new features and APIs.</td>
+                <td>
+                    <div class="example">"iOS is the mobile OS"<br>"OS version compatibility"<br>"Check OS version before using new APIs"</div>
+                </td>
+            </tr>
+            <tr id="ram">
+                <td><span class="term">RAM</span></td>
+                <td><strong>Random Access Memory</strong> - Temporary memory used by apps for active data. Apps use RAM to store data while running. iOS aggressively manages RAM, terminating apps when memory is low. Memory leaks waste RAM. Instruments helps detect memory issues. Different iPhone models have different amounts of RAM.</td>
+                <td>
+                    <div class="example">"This app uses 200MB of RAM"<br>"Memory leak causing high RAM usage"<br>"Optimize RAM consumption"</div>
+                </td>
+            </tr>
+            <tr id="rest">
+                <td><span class="term">REST</span></td>
+                <td><strong>Representational State Transfer</strong> - An architectural style for designing networked applications. RESTful APIs use HTTP methods to perform CRUD operations (Create, Read, Update, Delete). Most web APIs follow REST principles. Uses standard HTTP methods and JSON for data. Clean, standardized approach to web services.</td>
+                <td>
+                    <div class="example">"This is a RESTful API"<br>"GET /users (REST endpoint)"<br>"REST architecture principles"</div>
+                </td>
+            </tr>
+            <tr id="sdk">
+                <td><span class="term">SDK</span></td>
+                <td><strong>Software Development Kit</strong> - A collection of tools, libraries, documentation, and APIs for developing software for a specific platform. Xcode includes the iOS SDK. Provides everything needed to build apps for a platform. Contains frameworks, simulators, and development tools.</td>
+                <td>
+                    <div class="example">"Download the iOS SDK"<br>"The Firebase SDK for analytics"<br>"SDK documentation"</div>
+                </td>
+            </tr>
+            <tr id="sf">
+                <td><span class="term">SF</span></td>
+                <td><strong>San Francisco</strong> (in context of SF Symbols) - Apple's system font family and icon set. SF Symbols provides thousands of icons that match the SF font. Free to use in iOS apps. Automatically adapt to text size and weight. Available through the SF Symbols app. Essential resource for iOS iconography.</td>
+                <td>
+                    <div class="example">Image(systemName: "star.fill") // SF Symbol<br><br>Text("Hello").font(.system(size: 16)) // SF font</div>
+                </td>
+            </tr>
+            <tr id="ui">
+                <td><span class="term">UI</span></td>
+                <td><strong>User Interface</strong> - The visual elements and interactive components that users see and interact with in an app. Includes buttons, text, images, layouts, and all visual design. SwiftUI is a framework for building UIs. Good UI is intuitive, attractive, and responsive.</td>
+                <td>
+                    <div class="example">"The app has a clean UI"<br>"SwiftUI makes building UIs easier"<br>"UI design principles"</div>
+                </td>
+            </tr>
+            <tr id="url">
+                <td><span class="term">URL</span></td>
+                <td><strong>Uniform Resource Locator</strong> - An address that specifies the location of a resource on the internet. Used to fetch data from web servers or access files. In iOS, URL is a type for representing URLs. Essential for networking and web content. Includes protocol, domain, and path.</td>
+                <td>
+                    <div class="example">https://api.example.com/data<br><br>URL(string: "https://google.com")<br>"Invalid URL format"</div>
+                </td>
+            </tr>
+            <tr id="ux">
+                <td><span class="term">UX</span></td>
+                <td><strong>User Experience</strong> - The overall experience and satisfaction a user has when using an app. Encompasses usability, accessibility, performance, and emotional response. Good UX means the app is easy, pleasant, and efficient to use. Broader than UI - includes the entire user journey.</td>
+                <td>
+                    <div class="example">"This app has excellent UX"<br>"We need to improve the UX of the checkout flow"<br>"UX research and testing"</div>
+                </td>
+            </tr>
+            <tr id="wwdc">
+                <td><span class="term">WWDC</span></td>
+                <td><strong>Worldwide Developers Conference</strong> - Apple's annual developer conference where new technologies, frameworks, and OS versions are announced. Sessions teach new features and best practices. SwiftUI was announced at WWDC 2019. Major source of learning and news for iOS developers. Usually held in June.</td>
+                <td>
+                    <div class="example">"iOS 17 was announced at WWDC 2023"<br>"Watch WWDC sessions to learn new features"<br>"WWDC keynote"</div>
+                </td>
+            </tr>
+            <tr id="xml">
+                <td><span class="term">XML</span></td>
+                <td><strong>eXtensible Markup Language</strong> - A markup language for storing and transporting data. Uses tags similar to HTML. More verbose than JSON but self-describing. Used in some APIs and file formats. Less common than JSON in modern iOS development. Requires XML parser to use.</td>
+                <td>
+                    <div class="example">&lt;user&gt;<br>&nbsp;&nbsp;&lt;name&gt;Alice&lt;/name&gt;<br>&nbsp;&nbsp;&lt;age&gt;25&lt;/age&gt;<br>&lt;/user&gt;<br><br>"Parse XML response"</div>
                 </td>
             </tr>
         </tbody>
